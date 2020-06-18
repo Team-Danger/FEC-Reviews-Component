@@ -1,0 +1,26 @@
+{
+  "name": "FEC-Reviews-Component",
+  "version": "1.0.0",
+  "description": "This is the review component of the Airbnb clone. The bulk of the review body and details will be draw from a database to be rendered on the screen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Danger/FEC-Reviews-Component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Danger/FEC-Reviews-Component/issues"
+  },
+  "homepage": "https://github.com/Team-Danger/FEC-Reviews-Component#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "faker": "^4.1.0",
+    "lorem-ipsum": "^2.0.3",
+    "mongoose": "^5.9.19"
+  }
+}
