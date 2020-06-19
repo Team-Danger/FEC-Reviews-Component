@@ -4,7 +4,8 @@
   "description": "This is the review component of the Airbnb clone. The bulk of the review body and details will be draw from a database to be rendered on the screen",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "seedDB": "node ./database/seedScript.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,21 @@
   },
   "homepage": "https://github.com/Team-Danger/FEC-Reviews-Component#readme",
   "dependencies": {
+    "@shelf/jest-mongodb": "^1.1.5",
     "bluebird": "^3.7.2",
     "faker": "^4.1.0",
     "lorem-ipsum": "^2.0.3",
     "mongoose": "^5.9.19"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.3.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "jest": "^26.0.1"
   }
 }

@@ -1,89 +1,82 @@
-const LoremIpsum = require("lorem-ipsum").LoremIpsum;
-const faker = require('faker');
-const { name, random } = require("faker");
+const { LoremIpsum } = require('lorem-ipsum');
+const { name } = require('faker');
 
-//set up lorem ipsum params
+// set up lorem ipsum params
 const lorem = new LoremIpsum({
   sentencesPerParagraph: {
     max: 8,
-    min: 1
+    min: 1,
   },
   wordsPerSentence: {
     max: 16,
-    min: 4
-  }
+    min: 4,
+  },
 });
 
 // ===== HELPER FUNCTIONS =====
-const pad3 = numString => {
+const pad3 = (numString) => {
   if (numString.length > 3 || numString.length <= 0) {
-    console.log('Cannot pad. Please check')
-    return;
+    return undefined;
   }
   return numString.padStart(3, '0');
-}
+};
 
-const average = array => array.reduce((a, b) => a + b) / array.length;
+const average = (array) => array.reduce((a, b) => a + b) / array.length;
 
-const hasResponse = () => Math.floor(Math.random() * 2) === 0 ? true : false;
+const hasResponse = () => (Math.floor(Math.random() * 2) === 0);
 
-const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) ) + min;
+const randomNumber = (min, max) => (Math.floor(Math.random() * (max - min)) + min);
 
-const generateReviews = () => {
-  const randomSize = randomNumber(6, 10);
+const generateReviews = (size) => {
+  const reviews = [];
+  for (let count = 1; count <= size; count += 1) {
+    const reviewObj = {};
 
-  let reviews = [];
-  for (let count = 1; count <= randomSize; count++) {
-      let reviewObj = {};
-
-      reviewObj.dp = randomNumber(1, 30).toString();
-      reviewObj.body = lorem.generateParagraphs(1);
-      if (hasResponse()){
-        reviewObj.respond = lorem.generateParagraphs(1);
+    reviewObj.reviewer_name = name.firstName();
+    reviewObj.dp = randomNumber(1, 30).toString();
+    reviewObj.body = lorem.generateParagraphs(1);
+    if (hasResponse()) {
+      reviewObj.respond = lorem.generateParagraphs(1);
     }
 
-    reviews.push(reviewObj)
+    reviews.push(reviewObj);
   }
   return reviews;
-}
+};
 
 // Math.floor(Math.random() * (max - min + 1) + min)
 
 // ====== ENTRY CREATION FUNCTION =====
-const seedEntry = seed => {
+const seedEntry = (seed) => {
   // ===== STORAGE SETUP =====
-  let entry = {};
-  let averages = [];
+  const entry = {};
+  const averages = [];
 
   // ===== CHECKS =====
   if (typeof seed !== 'number') {
-    console.log('Invalid')
-    return;
+    return undefined;
   }
 
-  //===== DUMMY DATA CREATION ======
+  // ===== DUMMY DATA CREATION ======
 
-  for (let count = 1; count <= 6; count++) {
+  for (let count = 1; count <= 6; count += 1) {
     averages.push(randomNumber(10, 50) / 10);
   }
-
-  seed = seed.toString();
-
-  entry.paddedId = pad3(seed);
-  entry.name = faker.name.firstName();
-  entry.dp = randomNumber(1, 100).toString();
+  const [cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg] = averages;
+  entry.padded_id = pad3(seed.toString());
+  entry.user_dp = randomNumber(1, 100).toString();
+  entry.user_name = name.firstName();
   entry.avg = average(averages).toFixed(2);
-  entry.clean_avg = averages[0];
-  entry.comm_avg = averages[1];
-  entry.accuracy_avg = averages[2];
-  entry.value_avg = averages[3];
-  entry.location_avg = averages[4];
-  entry.checkin_avg = averages[5];
-
-  console.log(entry);
-  entry.reviews = generateReviews();
+  entry.review_size = randomNumber(6, 10);
+  entry.clean_avg = cleanAvg;
+  entry.comm_avg = commAvg;
+  entry.accuracy_avg = accuracyAvg;
+  entry.value_avg = valueAvg;
+  entry.location_avg = locationAvg;
+  entry.checkin_avg = checkinAvg;
+  entry.reviews = generateReviews(entry.review_size);
 
   return entry;
-}
+};
 
-module.exports.seedEntry = seedEntry;
+module.exports = seedEntry;
