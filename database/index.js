@@ -27,5 +27,4 @@ const insertSampleData = (entry) => {
   Reviews.create(entry);
 };
 
-module.exports = Reviews;
-module.exports = insertSampleData;
+module.exports = { Reviews, insertSampleData };

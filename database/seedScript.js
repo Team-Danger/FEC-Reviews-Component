@@ -1,7 +1,7 @@
-const insertSampleData = require('./index.js');
+const db = require('../database/index.js');
 
 const seedEntry = require('./seedCreation.js');
 
 for (let count = 1; count < 101; count += 1) {
-  insertSampleData(seedEntry(count));
+  db.insertSampleData(seedEntry(count));
 }

@@ -1,19 +1,17 @@
-const { TestScheduler } = require('jest');
-
+const { fail } = require('assert');
 const seedEntry = require('../database/seedCreation.js');
+const db = require('../database/index.js');
 
-test('Seed Object should match datatypes in schema', () => {
-  const seedOne = seedEntry(1);
+test('Seeded object should be valid', () => {
+  const testEntry = new db.Reviews(seedEntry(1));
 
-  expect(seedOne.constructor).toBe(Object);
-  expect(typeof seedOne.user_dp).toBe('string');
-  expect(typeof seedOne.user_name).toBe('string');
-  expect(typeof seedOne.review_size).toBe('number');
-  expect(typeof seedOne.clean_avg).toBe('number');
-  expect(typeof seedOne.comm_avg).toBe('number');
-  expect(typeof seedOne.location_avg).toBe('number');
-  expect(typeof seedOne.checkin_avg).toBe('number');
-  expect(seedOne.reviews.constructor).toBe(Array);
+  return testEntry.validate()
+    .then((err) => {
+      expect(err).toBe(undefined);
+    })
+    .catch((err) => {
+      fail(err);
+    });
 });
 
 test('paddedId in seeds should be length 3 and padded with appropriate 0s in front', () => {
