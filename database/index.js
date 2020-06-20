@@ -27,4 +27,14 @@ const insertSampleData = (entry) => {
   Reviews.create(entry);
 };
 
-module.exports = { Reviews, insertSampleData };
+const retrieveListing = (id, cb) => {
+  Reviews.find({padded_id: id})
+    .then((results) => {
+      cb(null,results)
+    })
+    .catch((err) => {
+      cb(err)
+    })
+}
+
+module.exports = { Reviews, insertSampleData, retrieveListing };
