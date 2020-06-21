@@ -43,5 +43,8 @@
     "jest": "^26.0.1",
     "superagent": "^5.2.2",
     "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
