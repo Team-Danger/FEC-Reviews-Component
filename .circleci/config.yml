@@ -6,7 +6,7 @@ jobs:
     executor:
       name: node/default
     steps:
-      - checkout api-set-up
+      - checkout master
       - node/with-cache:
           steps:
             - run: npm install
