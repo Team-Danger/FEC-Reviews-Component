@@ -28,13 +28,13 @@ const insertSampleData = (entry) => {
 };
 
 const retrieveListing = (id, cb) => {
-  Reviews.find({padded_id: id})
+  Reviews.find({ padded_id: id })
     .then((results) => {
-      cb(null,results)
+      cb(null, results);
     })
     .catch((err) => {
-      cb(err)
-    })
-}
+      cb(err);
+    });
+};
 
 module.exports = { Reviews, insertSampleData, retrieveListing };
