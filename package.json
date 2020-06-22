@@ -4,7 +4,9 @@
   "description": "This is the review component of the Airbnb clone. The bulk of the review body and details will be draw from a database to be rendered on the screen",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest --coverage --detectOpenHandles",
+    "test": "./node_modules/.bin/jest --detectOpenHandles",
+    "test:report": "./node_modules/.bin/jest --coverage --detectOpenHandles",
+    "server": "nodemon server",
     "seedDB": "node ./database/seedScript.js"
   },
   "repository": {
