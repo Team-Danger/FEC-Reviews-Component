@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const seedEntry = require('../database/seedCreation.js');
 const db = require('../database/index.js');
-const app = require('../server/index.js');
+const app = require('../server/app.js');
 
 const database = 'fecReviews';
 const request = supertest(app);
