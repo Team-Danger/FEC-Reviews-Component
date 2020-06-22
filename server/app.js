@@ -2,7 +2,12 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 
+const path = require('path');
+
 const app = express();
+const PUBLIC = path.resolve(__dirname, '..', 'client', 'public');
+
+app.use(express.static(PUBLIC));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
