@@ -1,5 +1,6 @@
 const supertest = require('supertest');
 const mongoose = require('mongoose');
+const regeneratorRuntime = require("regenerator-runtime");
 
 const seedEntry = require('../database/seedCreation.js');
 const db = require('../database/index.js');
