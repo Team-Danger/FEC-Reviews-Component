@@ -9,10 +9,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = require('../database/index.js');
 
-app.get('/', (req, res) => {
-  res.sendStatus(200);
-})
-
 app.get('/api/:id', (req, res) => {
   const paddedId = req.params.id;
   db.retrieveListing(paddedId, (err, data) => {
@@ -23,7 +19,5 @@ app.get('/api/:id', (req, res) => {
     }
   });
 });
-
-app.listen(1314, () => {console.log('listening on')});
 
 module.exports = app;
