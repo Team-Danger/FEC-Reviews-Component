@@ -9,7 +9,9 @@ class App extends React.Component {
 
     this.state = {
       listingSummary: {},
-      reviews:[]}
+      reviewsPreview:[],
+      allReviews:[] //to prep for modal
+    }
 
     this.getFromDB = this.getFromDB.bind(this);
   }
@@ -24,9 +26,20 @@ class App extends React.Component {
     axios.get(`/api/${test}`)
       .then((results) => {
         const {reviews, ...rest} = results.data[0];
-        this.setState({
-          listingSummary: rest,
-          reviews: reviews});
+
+        if(reviews.length > 6) {
+          this.setState({
+            listingSummary: rest,
+            reviewsPreview: reviews.slice(0,6),
+            allReviews: reviews
+          })
+        } else {
+          this.setState({
+            listingSummary: rest,
+            reviewsPreview: reviews,
+            allReviews: reviews
+          })
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -36,8 +49,8 @@ class App extends React.Component {
   render() {
     return (
       <div className='Reviews'>
-        <div className='overview'>{this.state.listing.avg} ({this.state.listing.review_size} reviews)</div>
-        <ReviewsBody reviews={this.state.reviews}/>
+        <div className='overview'>{this.state.listingSummary.avg} ({this.state.listingSummary.review_size} reviews)</div>
+        <ReviewsBody reviews={this.state.reviewsPreview}/>
       </div>
     )
   }
