@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      listing: {},
+      listingSummary: {},
       reviews:[]}
 
     this.getFromDB = this.getFromDB.bind(this);
@@ -23,9 +23,10 @@ class App extends React.Component {
 
     axios.get(`/api/${test}`)
       .then((results) => {
+        const {reviews, ...rest} = results.data[0];
         this.setState({
-          listing: results.data[0],
-          reviews: results.data[0].reviews});
+          listingSummary: rest,
+          reviews: reviews});
       })
       .catch((err) => {
         console.log(err);
@@ -36,7 +37,7 @@ class App extends React.Component {
     return (
       <div className='Reviews'>
         <div className='overview'>{this.state.listing.avg} ({this.state.listing.review_size} reviews)</div>
-        <ReviewsBody reviews={this.state.reviews} />
+        <ReviewsBody reviews={this.state.reviews}/>
       </div>
     )
   }
