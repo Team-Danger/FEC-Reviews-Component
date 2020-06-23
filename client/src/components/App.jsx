@@ -13,7 +13,7 @@ class App extends React.Component {
   componentDidMount() {
     this.getFromDB();
   }
-
+  
   getFromDB() {
     const test = (Math.floor(Math.random() * (100 - 1)) + 1).toString().padStart(3, '0');
 
