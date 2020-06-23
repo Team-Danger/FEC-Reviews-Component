@@ -11,7 +11,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getFromDB()
+    this.getFromDB();
   }
 
   getFromDB() {
@@ -19,7 +19,7 @@ class App extends React.Component {
 
     axios.get(`/api/${test}`)
       .then((results) => {
-        this.setState({reviews: results.data});
+        this.setState({reviews: results.data[0]});
       })
       .catch((err) => {
         console.log(err);
@@ -29,7 +29,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='Reviews'>
-        Test
+        <div className='overview'>{this.state.reviews.avg} ({this.state.reviews.review_size} reviews)</div>
       </div>
     )
   }
