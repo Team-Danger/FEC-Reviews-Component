@@ -9,3 +9,5 @@ const retrieveListing = (id, cb) => {
       cb(err);
     });
 };
+
+module.exports = retrieveListing;
