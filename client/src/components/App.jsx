@@ -1,6 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 
+import { Wrapper } from './styles/stylesheet.jsx'
+
+import ReviewsSummary from './reviewsSummary.jsx'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -13,7 +17,7 @@ class App extends React.Component {
   componentDidMount() {
     this.getFromDB();
   }
-  
+
   getFromDB() {
     const test = (Math.floor(Math.random() * (100 - 1)) + 1).toString().padStart(3, '0');
 
@@ -28,9 +32,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='Reviews'>
-        <div className='overview'>{this.state.reviews.avg} ({this.state.reviews.review_size} reviews)</div>
-      </div>
+      <Wrapper>
+        <ReviewsSummary avg={this.state.reviews.avg} reviewsSize={this.state.reviews.review_size} />
+      </Wrapper>
     )
   }
 }
