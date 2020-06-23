@@ -68,18 +68,18 @@ const seedEntry = (seed) => {
   }
   const [cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg] = averages;
   entry.date = randomDate(new Date(2014, 0, 1), new Date());
-  entry.padded_id = pad3(seed.toString());
-  entry.user_dp = randomNumber(1, 100).toString();
-  entry.user_name = name.firstName();
+  entry.paddedId = pad3(seed.toString());
+  entry.userDp = randomNumber(1, 100).toString();
+  entry.userName = name.firstName();
   entry.avg = average(averages).toFixed(2);
-  entry.review_size = randomNumber(6, 10);
-  entry.clean_avg = cleanAvg;
-  entry.comm_avg = commAvg;
-  entry.accuracy_avg = accuracyAvg;
-  entry.value_avg = valueAvg;
-  entry.location_avg = locationAvg;
-  entry.checkin_avg = checkinAvg;
-  entry.reviews = generateReviews(entry.review_size);
+  entry.reviewSize = randomNumber(6, 10);
+  entry.cleanAvg = cleanAvg;
+  entry.commAvg = commAvg;
+  entry.accuracyAvg = accuracyAvg;
+  entry.valueAvg = valueAvg;
+  entry.locationAvg = locationAvg;
+  entry.checkinAvg = checkinAvg;
+  entry.reviews = generateReviews(entry.reviewSize);
 
   return entry;
 };

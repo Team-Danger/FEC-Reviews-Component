@@ -1,0 +1,41 @@
+const supertest = require('supertest');
+// const mongoose = require('mongoose');
+// const regeneratorRuntime = require("regenerator-runtime");
+
+const seedEntry = require('../database/seedCreation.js');
+// const db = require('../database/index.js');
+// const app = require('../server/app.js');
+
+// const database = 'fecReviews';
+// const request = supertest(app);
+
+// beforeAll(async () => {
+//   const url = `mongodb://127.0.0.1/${database}`;
+//   await mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
+// });
+
+// afterAll(async () => {
+//   await mongoose.connection.db.dropCollection('reviews');
+//   await mongoose.connection.close();
+// });
+
+
+  
+  // it('Seeds can be loaded onto database and are retrievable', async (done) => {
+  //   db.insertSampleData(seedEntry(1));
+
+  //   await db.retrieveListing('001', (err, result) => {
+  //     expect(result).toBeTruthy();
+
+  //     done();
+  //   });
+  // });
+
+// describe('Server path test', () => {
+//   test('Server should response to GET request', async (done) => {
+//     const response = await request.get('/api/:id');
+
+//     expect(response.status).toBe(200);
+//     done();
+//   });
+// });

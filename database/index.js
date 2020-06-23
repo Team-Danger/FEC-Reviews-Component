@@ -8,17 +8,17 @@ mongoose.connect('mongodb://localhost/fecReviews', { useNewUrlParser: true, useU
 
 const reviewSchema = new mongoose.Schema({
   date: Date,
-  padded_id: String,
-  user_dp: String,
-  user_name: String,
+  paddedId: String,
+  userDp: String,
+  userName: String,
   avg: String,
-  review_size: Number,
-  clean_avg: Number,
-  comm_avg: Number,
-  accuracy_avg: Number,
-  value_avg: Number,
-  checkin_avg: Number,
-  location_avg: Number,
+  reviewSize: Number,
+  cleanAvg: Number,
+  commAvg: Number,
+  accuracyAvg: Number,
+  valuAvg: Number,
+  checkinAvg: Number,
+  locationAvg: Number,
   reviews: Array,
 });
 
@@ -29,7 +29,7 @@ const insertSampleData = (entry) => {
 };
 
 const retrieveListing = (id, cb) => {
-  Reviews.find({ padded_id: id })
+  Reviews.find({ paddedId: id })
     .then((results) => {
       cb(null, results);
     })
