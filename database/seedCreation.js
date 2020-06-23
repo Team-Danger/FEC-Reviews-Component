@@ -27,6 +27,10 @@ const hasResponse = () => (Math.floor(Math.random() * 2) === 0);
 
 const randomNumber = (min, max) => (Math.floor(Math.random() * (max - min)) + min);
 
+const randomDate = (start, end) => (
+  new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
+)
+
 const generateReviews = (size) => {
   const reviews = [];
   for (let count = 1; count <= size; count += 1) {
@@ -63,6 +67,7 @@ const seedEntry = (seed) => {
     averages.push(randomNumber(10, 50) / 10);
   }
   const [cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg] = averages;
+  entry.date = randomDate(new Date(2014, 0, 1), new Date());
   entry.padded_id = pad3(seed.toString());
   entry.user_dp = randomNumber(1, 100).toString();
   entry.user_name = name.firstName();
