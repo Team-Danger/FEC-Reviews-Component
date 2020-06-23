@@ -7,6 +7,7 @@ Promise.promisifyAll(mongoose);
 mongoose.connect('mongodb://localhost/fecReviews', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const reviewSchema = new mongoose.Schema({
+  date: Date,
   padded_id: String,
   user_dp: String,
   user_name: String,
