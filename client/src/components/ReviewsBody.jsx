@@ -9,8 +9,8 @@ class ReviewsBody extends React.Component {
   render() {
     return (
       <div>
-       {this.props.reviews.map((entry) => (
-          <ReviewEntry entry={entry} />
+       {this.props.reviews.map((entry, idx) => (
+          <ReviewEntry key={`${entry.dp}${idx}`} entry={entry} />
        ))}
       </div>
     )
