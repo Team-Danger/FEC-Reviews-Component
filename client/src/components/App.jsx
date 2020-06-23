@@ -1,11 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 
+import ReviewsBody from './ReviewsBody.jsx'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {reviews: {}}
+    this.state = {
+      listing: {},
+      reviews:[]}
 
     this.getFromDB = this.getFromDB.bind(this);
   }
@@ -19,7 +23,9 @@ class App extends React.Component {
 
     axios.get(`/api/${test}`)
       .then((results) => {
-        this.setState({reviews: results.data[0]});
+        this.setState({
+          listing: results.data[0],
+          reviews: results.data[0].reviews});
       })
       .catch((err) => {
         console.log(err);
@@ -29,7 +35,8 @@ class App extends React.Component {
   render() {
     return (
       <div className='Reviews'>
-        <div className='overview'>{this.state.reviews.avg} ({this.state.reviews.review_size} reviews)</div>
+        <div className='overview'>{this.state.listing.avg} ({this.state.listing.review_size} reviews)</div>
+        <ReviewsBody reviews={this.state.reviews} />
       </div>
     )
   }
