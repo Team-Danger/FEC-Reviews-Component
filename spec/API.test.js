@@ -4,20 +4,20 @@ const app = require('../server/app.js');
 
 require('babel-polyfill');
 
-let server, agent;
+// let server, agent;
 
-beforeEach((done) => {
-    server = app.listen(4000, (err) => {
-      if (err) return done(err);
+// beforeEach((done) => {
+//     server = app.listen(4000, (err) => {
+//       if (err) return done(err);
 
-       agent = request.agent(server); // since the application is already listening, it should use the allocated port
-       done();
-    });
-});
+//        agent = request.agent(server); // since the application is already listening, it should use the allocated port
+//        done();
+//     });
+// });
 
-afterEach((done) => {
-  return  server && server.close(done);
-});
+// afterEach((done) => {
+//   return  server && server.close(done);
+// });
 
 describe('API tests', () => {
   it('Should get a response given a good GET request', async () => {

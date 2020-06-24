@@ -22,5 +22,5 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run test
-environment:
-  - MONGO_URL: "mongodb://localhost:27017/data"
+# environment:
+#   - MONGO_URL: "mongodb://localhost:27017/data"

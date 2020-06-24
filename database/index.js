@@ -28,4 +28,4 @@ const db = mongoose.connect('mongodb://localhost/fecReviews', { useNewUrlParser:
 
 // module.exports = Reviews;
 
-module.exports = db;
+module.exports.db = db;

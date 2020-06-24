@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-require('./index.js')
+require('./index.js');
 
 const reviewSchema = new mongoose.Schema({
   date: Date,
