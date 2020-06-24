@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 const path = require('path');
 
-const Reviews = require('../database/index.js')
+const Reviews = require('../database/schema.js')
 
 const app = express();
 const PUBLIC = path.resolve(__dirname, '..', 'client', 'public');

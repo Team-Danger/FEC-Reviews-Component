@@ -1,4 +1,4 @@
-const Reviews = require('./index.js');
+const Reviews = require('./schema.js');
 
 const seedEntry = require('./seedCreation.js');
 const { connection } = require('mongoose');
