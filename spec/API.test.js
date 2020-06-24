@@ -27,7 +27,7 @@ describe('API tests', () => {
         // console.log(`goodget: ${response.body}`)
         expect(response.statusCode).toBe(200);
       });
-  });
+  }, 90000);
 
 
   it('Should 500 a bad GET request', async () => {
@@ -37,5 +37,5 @@ describe('API tests', () => {
         expect(res.statusCode).toBe(500);
       })
 
-  });
+  }, 90000);
 });
