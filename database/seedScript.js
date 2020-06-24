@@ -1,7 +1,18 @@
-const db = require('./index.js');
+const Reviews = require('./index.js');
 
 const seedEntry = require('./seedCreation.js');
+const { connection } = require('mongoose');
 
-for (let count = 1; count < 101; count += 1) {
-  db.insertSampleData(seedEntry(count));
+const seed = (numberSeeds) => {
+  const entriesList = [];
+
+  for (let count = 1; count <= numberSeeds; count += 1) {
+    entriesList.push(seedEntry(count));
+  }
+
+  Reviews.create(entriesList)
+    .then(() => connection.close())
+    .catch((err) => console.error(err));
 }
+
+seed(100);

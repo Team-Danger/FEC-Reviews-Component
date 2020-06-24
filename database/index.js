@@ -26,8 +26,4 @@ const reviewSchema = new mongoose.Schema({
 
 const Reviews = mongoose.model('Reviews', reviewSchema);
 
-const insertSampleData = (entry) => {
-  Reviews.create(entry);
-};
-
-module.exports = { Reviews, insertSampleData };
+module.exports = Reviews;
