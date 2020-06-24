@@ -4,38 +4,6 @@ const mongoose = require('mongoose');
 
 Promise.promisifyAll(mongoose);
 
-mongoose.connect('mongodb://localhost/fecReviews', { useNewUrlParser: true, useUnifiedTopology: true });
+const db = mongoose.connect('mongodb://localhost/fecReviews', { useNewUrlParser: true, useUnifiedTopology: true })
 
-const reviewSchema = new mongoose.Schema({
-  date: Date,
-  padded_id: String,
-  user_dp: String,
-  user_name: String,
-  avg: String,
-  review_size: Number,
-  clean_avg: Number,
-  comm_avg: Number,
-  accuracy_avg: Number,
-  value_avg: Number,
-  checkin_avg: Number,
-  location_avg: Number,
-  reviews: Array,
-});
-
-const Reviews = mongoose.model('Reviews', reviewSchema);
-
-const insertSampleData = (entry) => {
-  Reviews.create(entry);
-};
-
-const retrieveListing = (id, cb) => {
-  Reviews.find({ padded_id: id })
-    .then((results) => {
-      cb(null, results);
-    })
-    .catch((err) => {
-      cb(err);
-    });
-};
-
-module.exports = { Reviews, insertSampleData, retrieveListing };
+module.exports.db = db;
