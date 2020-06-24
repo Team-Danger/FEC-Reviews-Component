@@ -1,7 +1,7 @@
-const Reviews = require('./index.js')
+const { Reviews } = require('./index.js')
 
 const retrieveListing = (id, cb) => {
-  Reviews.find({ padded_id: id })
+  Reviews.find({ paddedId: id })
     .then((results) => {
       cb(null, results);
     })

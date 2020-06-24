@@ -35,7 +35,7 @@ describe('Seeding Script Tests', () => {
 
   test('should contain 6 - 10 reviews', () => {
     expect(reviews.length).toBeLessThanOrEqual(10);
-    expect(reviews.length).toBeLessThanOrEqual(6);
+    expect(reviews.length).toBeGreaterThanOrEqual(6);
   });
 
   test('some reviews should have responses', () => {
