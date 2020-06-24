@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 require('./index.js');
 
 const reviewSchema = new mongoose.Schema({
-  date: Date,
   paddedId: String,
   userDp: String,
   userName: String,

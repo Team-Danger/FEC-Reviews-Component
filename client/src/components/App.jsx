@@ -5,7 +5,9 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {reviews: {}}
+    this.state = {
+      reviews: {},
+      overview: {}}
 
     this.getFromDB = this.getFromDB.bind(this);
   }
@@ -14,12 +16,15 @@ class App extends React.Component {
     this.getFromDB();
   }
   
-  getFromDB() {
-    const test = (Math.floor(Math.random() * (100 - 1)) + 1).toString().padStart(3, '0');
-
-    axios.get(`/api/${test}`)
+  getFromDB() { 
+    
+  axios.get(`/api/${this.props.listing}`) 
       .then((results) => {
-        this.setState({reviews: results.data[0]});
+        const {reviews, ...rest} = results.data;
+        console.log(rest);
+        this.setState({
+          reviews: reviews,
+          overview: rest});
       })
       .catch((err) => {
         console.log(err);
@@ -29,7 +34,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='Reviews'>
-        <div className='overview'>{this.state.reviews.avg} ({this.state.reviews.review_size} reviews)</div>
+        {this.state.overview.reviewSize}
       </div>
     )
   }
