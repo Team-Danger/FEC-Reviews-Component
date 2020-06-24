@@ -1,5 +1,10 @@
 import React from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  font-family: sans-serif;
+`
 
 class App extends React.Component {
   constructor(props) {
@@ -18,10 +23,10 @@ class App extends React.Component {
   
   getFromDB() { 
     
-  axios.get(`/api/${this.props.listing}`) 
+    axios.get(`/api/${this.props.listing}`) 
       .then((results) => {
         const {reviews, ...rest} = results.data;
-        console.log(rest);
+        console.log(reviews);
         this.setState({
           reviews: reviews,
           overview: rest});
@@ -33,9 +38,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='Reviews'>
-        {this.state.overview.reviewSize}
-      </div>
+      <Wrapper>
+        
+      </Wrapper>
     )
   }
 }
