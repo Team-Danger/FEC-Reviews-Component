@@ -25,10 +25,15 @@ app.get('/api/:id', (req, res) => {
   // });
   Reviews.findOne({paddedId: req.params.id})
     .then((listing) => {
-      res.status(200).send(listing);
-    })
-    .catch((err) => {
-      res.sendStatus(500)
+      if (listing) {
+        res.status(200).send(listing);
+      } else {
+        res.sendStatus(500);
+      }
+      // res.send(listing)
+      // console.log(`here is the req param ${req.params.id}`);
+      // console.log(`here is the listing ${listing}`)
+      // res.status(200).send(listing);
     })
 
 });
