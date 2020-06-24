@@ -14,8 +14,6 @@ app.use(express.static(PUBLIC));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const retrieveListing = require('../database/retrieveListing.js')
-
 app.get('/api/:id', (req, res) => {
   // const paddedId = req.params.id;
   // retrieveListing(paddedId, (err, data) => {

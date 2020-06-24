@@ -2,7 +2,7 @@ const seedEntry = require('../database/seedCreation.js');
 
 describe('Seeding Script Tests', () => {
   const seedOne = seedEntry(1);
-  const { reviews, reviewSize } = seedOne;
+  const { reviews } = seedOne;
 
   test('paddedId in seeds should be length 3 and padded with appropriate 0s in front', () => {
     const seedTens = seedEntry(10);
