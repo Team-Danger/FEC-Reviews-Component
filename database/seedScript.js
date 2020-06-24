@@ -15,4 +15,5 @@ const seed = (numberSeeds) => {
     .catch((err) => console.error(err));
 }
 
+
 seed(100);
