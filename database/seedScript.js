@@ -1,4 +1,5 @@
 const Reviews = require('./schema.js');
+require('./index.js')
 
 const seedEntry = require('./seedCreation.js');
 const { connection } = require('mongoose');
@@ -14,6 +15,5 @@ const seed = (numberSeeds) => {
     .then(() => connection.close())
     .catch((err) => console.error(err));
 }
-
 
 seed(100);
