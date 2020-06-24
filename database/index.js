@@ -4,7 +4,9 @@ const mongoose = require('mongoose');
 
 Promise.promisifyAll(mongoose);
 
-mongoose.connect('mongodb://localhost/fecReviews', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/fecReviews', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then((res) => {console.log('DB connected')})
+  .catch((err) => {console.log(Error, err.message)});
 
 const reviewSchema = new mongoose.Schema({
   date: Date,
