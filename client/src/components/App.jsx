@@ -7,6 +7,10 @@ import Overview from './Overview.jsx'
 const Wrapper = styled.div`
   font-family: sans-serif;
 `
+const TestImg = styled.img`
+width: 50px;
+height: 50px;
+border-radius: 50%`
 
 class App extends React.Component {
   constructor(props) {
@@ -39,9 +43,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <Wrapper>
-        <Overview overview={this.state.overview} />
-      </Wrapper>
+      <OverviewWrapper>
+          {this.props.overview.avg} ({this.props.overview.reviewSize} reviews)
+      </OverviewWrapper>
     )
   }
 }
