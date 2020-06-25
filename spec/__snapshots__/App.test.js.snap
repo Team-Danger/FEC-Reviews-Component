@@ -3,5 +3,12 @@
 exports[`App component should render 1`] = `
 <div
   className=""
-/>
+>
+  <div
+    className=""
+  >
+     (
+     reviews)
+  </div>
+</div>
 `;

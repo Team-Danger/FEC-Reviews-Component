@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
+import Overview from './Overview.jsx'
+
 const Wrapper = styled.div`
   font-family: sans-serif;
 `
@@ -38,7 +40,7 @@ class App extends React.Component {
   render() {
     return (
       <Wrapper>
-        
+        <Overview overview={this.state.overview} />
       </Wrapper>
     )
   }
