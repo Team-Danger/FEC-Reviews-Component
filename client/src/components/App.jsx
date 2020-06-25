@@ -26,7 +26,6 @@ class App extends React.Component {
     axios.get(`/api/${this.props.listing}`) 
       .then((results) => {
         const {reviews, ...rest} = results.data;
-        console.log(reviews);
         this.setState({
           reviews: reviews,
           overview: rest});

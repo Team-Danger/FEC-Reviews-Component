@@ -4,26 +4,21 @@ const app = require('../server/app.js');
 
 require('babel-polyfill');
 
-
 describe('API tests', () => {
   it('Should get a response given a good GET request', async (done) => {
     // const response = await request(app).get('/api/adflhie')
     // expect(response.statusCode).toBe(500)
-    done()
+    done();
   }, 90000);
 
-
   it('Should 500 a bad GET request', async (done) => {
-
     // const response = await request(app).get('/api/adflhie')
     // expect(response.statusCode).toBe(500)
     await request(app)
       .get('/api/001')
       .then((response) => {
-        expect(response.statusCode).toBe(200)
+        expect(response.statusCode).toBe(200);
       });
-      
-    done()
-
+    done();
   }, 90000);
 });

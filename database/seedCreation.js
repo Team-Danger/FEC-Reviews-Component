@@ -29,7 +29,7 @@ const randomNumber = (min, max) => (Math.floor(Math.random() * (max - min)) + mi
 
 const randomDate = (start, end) => (
   new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
-)
+);
 
 const generateReviews = (size) => {
   const reviews = [];
@@ -46,7 +46,7 @@ const generateReviews = (size) => {
 
     reviews.push(reviewObj);
   }
-  return reviews.sort((a,b) => (a.date > b.date));
+  return reviews.sort((a, b) => (a.date > b.date));
 };
 
 // Math.floor(Math.random() * (max - min + 1) + min)
