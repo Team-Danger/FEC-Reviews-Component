@@ -4,17 +4,18 @@ import styled from 'styled-components';
 import PreviewEntry from './PreviewEntry.jsx'
 
 const ReviewSummaryStyle = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto)
 `
 const ReviewsSummary = (props) => {
   const { reviews } = props;
 
   return (
-    <div>
+    <ReviewSummaryStyle>
       {reviews.map((review, idx) => (
         <PreviewEntry review={review} />
       ))}   
-    </div>
+    </ReviewSummaryStyle>
   )
 }
 

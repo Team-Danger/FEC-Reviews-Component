@@ -9,10 +9,6 @@ const Wrapper = styled.div`
   font-family: sans-serif
   display: flex;
 `
-// const TestImg = styled.img`
-// width: 50px;
-// height: 50px;
-// border-radius: 50%`
 
 class App extends React.Component {
   constructor(props) {
@@ -41,7 +37,7 @@ class App extends React.Component {
     return (
       <Wrapper>
         <Overview overview={this.state.overview} />
-        <ReviewsSummary reviews={this.state.reviews} />
+        <ReviewsSummary reviews={this.state.reviews.slice(0,6)} />
       </Wrapper>
     )
   }
