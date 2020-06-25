@@ -29,7 +29,7 @@ const randomNumber = (min, max) => (Math.floor(Math.random() * (max - min)) + mi
 
 const randomDate = (start, end) => (
   new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
-)
+);
 
 const generateReviews = (size) => {
   const reviews = [];
@@ -39,13 +39,14 @@ const generateReviews = (size) => {
     reviewObj.reviewer_name = name.firstName();
     reviewObj.dp = randomNumber(1, 30).toString();
     reviewObj.body = lorem.generateParagraphs(1);
+    reviewObj.date = randomDate(new Date(2014, 0, 1), new Date());
     if (hasResponse()) {
       reviewObj.respond = lorem.generateParagraphs(1);
     }
 
     reviews.push(reviewObj);
   }
-  return reviews;
+  return reviews.sort((a, b) => (a.date > b.date));
 };
 
 // Math.floor(Math.random() * (max - min + 1) + min)
@@ -66,8 +67,8 @@ const seedEntry = (seed) => {
   for (let count = 1; count <= 6; count += 1) {
     averages.push(randomNumber(10, 50) / 10);
   }
+
   const [cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg] = averages;
-  entry.date = randomDate(new Date(2014, 0, 1), new Date());
   entry.paddedId = pad3(seed.toString());
   entry.userDp = randomNumber(1, 100).toString();
   entry.userName = name.firstName();
