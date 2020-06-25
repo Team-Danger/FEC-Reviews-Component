@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preview Entry Components should render 1`] = `
+.c0 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+<img
+  className="c0"
+  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug11.jpg"
+/>
+`;

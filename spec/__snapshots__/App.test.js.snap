@@ -1,14 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component should render 1`] = `
+.c1 {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.c0 {
+  font-family: sans-serif display:flex;
+}
+
 <div
-  className=""
+  className="c0"
 >
   <div
-    className=""
+    className="c1"
   >
      (
      reviews)
   </div>
+  <div />
 </div>
 `;

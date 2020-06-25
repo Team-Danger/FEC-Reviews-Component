@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewsSummary component should render 1`] = `
+.c0 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+<div>
+  <img
+    className="c0"
+    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug11.jpg"
+  />
+  <img
+    className="c0"
+    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug7.jpg"
+  />
+  <img
+    className="c0"
+    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug1.jpg"
+  />
+  <img
+    className="c0"
+    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug19.jpg"
+  />
+  <img
+    className="c0"
+    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug14.jpg"
+  />
+  <img
+    className="c0"
+    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug15.jpg"
+  />
+</div>
+`;
