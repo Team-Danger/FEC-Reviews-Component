@@ -60,57 +60,57 @@ const Rating = (props) => {
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
             <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
           </Bar>
-        <RatingText>{commAvg}</RatingText>
+        <RatingText>{cleanAvg}</RatingText>
         </RatingContainer>
       </CategoryWrapper>
 
       <CategoryWrapper>
-        <TextContainer>Cleaniness</TextContainer> 
+        <TextContainer>Accuracy</TextContainer> 
         <RatingContainer>
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
-            <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
+            <Bar width={`${accuracyPercent}%`} color='black' height='100%'/> 
+          </Bar>
+        <RatingText>{accuracyAvg}</RatingText>
+        </RatingContainer>
+      </CategoryWrapper>
+
+      <CategoryWrapper>
+        <TextContainer>Communication</TextContainer> 
+        <RatingContainer>
+          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+            <Bar width={`${commPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{commAvg}</RatingText>
         </RatingContainer>
       </CategoryWrapper>
 
       <CategoryWrapper>
-        <TextContainer>Cleaniness</TextContainer> 
+        <TextContainer>Location</TextContainer> 
         <RatingContainer>
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
-            <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
+            <Bar width={`${locationPercent}%`} color='black' height='100%'/> 
           </Bar>
-        <RatingText>{commAvg}</RatingText>
+        <RatingText>{locationAvg}</RatingText>
         </RatingContainer>
       </CategoryWrapper>
 
       <CategoryWrapper>
-        <TextContainer>Cleaniness</TextContainer> 
+        <TextContainer>Check-in</TextContainer> 
         <RatingContainer>
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
-            <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
+            <Bar width={`${checkinPercent}%`} color='black' height='100%'/> 
           </Bar>
-        <RatingText>{commAvg}</RatingText>
+        <RatingText>{checkinAvg}</RatingText>
         </RatingContainer>
       </CategoryWrapper>
 
       <CategoryWrapper>
-        <TextContainer>Cleaniness</TextContainer> 
+        <TextContainer>Value</TextContainer> 
         <RatingContainer>
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
-            <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
+            <Bar width={`${valuePercent}%`} color='black' height='100%'/> 
           </Bar>
-        <RatingText>{commAvg}</RatingText>
-        </RatingContainer>
-      </CategoryWrapper>
-
-      <CategoryWrapper>
-        <TextContainer>Cleaniness</TextContainer> 
-        <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
-            <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
-          </Bar>
-        <RatingText>{commAvg}</RatingText>
+        <RatingText>{valueAvg}</RatingText>
         </RatingContainer>
       </CategoryWrapper>
 
