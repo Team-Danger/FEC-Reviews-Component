@@ -7,8 +7,8 @@ import { mount } from 'enzyme';
 
 import 'babel-polyfill';
 
-import mockData from '../__mocks__/mockData.js'; //eslint-disable-line
-import Overview from '../client/src/components/Overview.jsx'; //eslint-disable-line
+import mockData from '../__mocks__/mockData';
+import Overview from '../client/src/components/Overview';
 
 describe('tests for overview component', () => {
   const { reviews, ...rest } = mockData;
@@ -24,6 +24,6 @@ describe('tests for overview component', () => {
     const component = mount(<Overview overview={rest} />);
     const outputText = component.find('div').text();
 
-    expect(outputText).toBe('3.08 (6 reviews)');
+    expect(outputText).toBe('2.05 (7 reviews)');
   });
 });

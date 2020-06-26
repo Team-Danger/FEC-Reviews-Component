@@ -5,8 +5,8 @@ import 'jest-enzyme';
 import 'jest-styled-components';
 import { mount } from 'enzyme';
 
-import { reviews } from '../__mocks__/mockData.js';
-import ReviewsSummary from '../client/src/components/ReviewsSummary.jsx';
+import { reviews } from '../__mocks__/mockData';
+import ReviewsSummary from '../client/src/components/ReviewsSummary';
 
 describe('ReviewsSummary component', () => {
   it('should render', () => {
@@ -17,8 +17,8 @@ describe('ReviewsSummary component', () => {
   });
 
   it('should render Reviews Entry component', () => {
-    const wrapper = mount(<ReviewsSummary reviews={reviews} />)
+    const wrapper = mount(<ReviewsSummary reviews={reviews} />);
 
     expect(wrapper.exists('PreviewEntry')).toBe(true);
-  })
+  });
 });

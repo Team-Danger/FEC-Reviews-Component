@@ -12,7 +12,7 @@ const seed = (numberSeeds) => {
 
   Reviews.create(entriesList)
     .then(() => connection.close())
-    .catch((err) => console.error(err));
+    .catch(() => { throw new Error('cannot put seeds into database'); });
 };
 
 seed(100);

@@ -8,12 +8,12 @@ const reviewSchema = new mongoose.Schema({
   userName: String,
   avg: String,
   reviewSize: Number,
-  cleanAvg: Number,
-  commAvg: Number,
-  accuracyAvg: Number,
-  valuAvg: Number,
-  checkinAvg: Number,
-  locationAvg: Number,
+  cleanAvg: String,
+  commAvg: String,
+  accuracyAvg: String,
+  valueAvg: String,
+  checkinAvg: String,
+  locationAvg: String,
   reviews: Array,
 });
 

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Overview from './Overview.jsx'
 import ReviewsSummary from './ReviewsSummary.jsx'
+import PreviewRating from './PreviewRating.jsx'
 
 const Wrapper = styled.div`
   font-family: sans-serif
@@ -36,6 +37,7 @@ class App extends React.Component {
     return (
       <Wrapper>
         <Overview overview={this.state.overview} />
+        <PreviewRating overview={this.state.overview} />
         <ReviewsSummary reviews={this.state.reviews.slice(0,6)} />
       </Wrapper>
     )
