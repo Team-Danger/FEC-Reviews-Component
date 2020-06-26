@@ -8,6 +8,11 @@ describe('API tests', () => {
   it('Should get a response given a good GET request', async (done) => {
     // const response = await request(app).get('/api/adflhie')
     // expect(response.statusCode).toBe(500)
+    await request(app)
+      .get('/api/adflhie')
+      .then((response) => {
+        expect(response.statusCode).toBe(500);
+      });
     done();
   }, 90000);
 
@@ -15,9 +20,9 @@ describe('API tests', () => {
     // const response = await request(app).get('/api/adflhie')
     // expect(response.statusCode).toBe(500)
     await request(app)
-      .get('/api/001')
+      .get('/api/adflhie')
       .then((response) => {
-        expect(response.statusCode).toBe(200);
+        expect(response.statusCode).toBe(500);
       });
     done();
   }, 90000);

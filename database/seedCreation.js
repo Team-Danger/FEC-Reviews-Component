@@ -55,7 +55,8 @@ const generateReviews = (size) => {
 const seedEntry = (seed) => {
   // ===== STORAGE SETUP =====
   const entry = {};
-  const averages = [];
+  const averagesNum = [];
+  const averagesFloat = [];
 
   // ===== CHECKS =====
   if (typeof seed !== 'number') {
@@ -65,14 +66,17 @@ const seedEntry = (seed) => {
   // ===== DUMMY DATA CREATION ======
 
   for (let count = 1; count <= 6; count += 1) {
-    averages.push(randomNumber(10, 50) / 10);
+    const randomInt = (randomNumber(10, 50) / 10);
+    const randomFloat = Number.parseFloat(randomInt).toFixed(1);
+    averagesNum.push(randomInt)
+    averagesFloat.push(randomFloat);
   }
 
-  const [cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg] = averages;
+  const [cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg] = averagesFloat;
   entry.paddedId = pad3(seed.toString());
   entry.userDp = randomNumber(1, 100).toString();
   entry.userName = name.firstName();
-  entry.avg = average(averages).toFixed(2);
+  entry.avg = average(averagesNum).toFixed(2);
   entry.reviewSize = randomNumber(6, 10);
   entry.cleanAvg = cleanAvg;
   entry.commAvg = commAvg;
@@ -81,7 +85,6 @@ const seedEntry = (seed) => {
   entry.locationAvg = locationAvg;
   entry.checkinAvg = checkinAvg;
   entry.reviews = generateReviews(entry.reviewSize);
-
   return entry;
 };
 

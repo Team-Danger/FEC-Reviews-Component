@@ -9,9 +9,9 @@ exports[`tests for overview component should render 1`] = `
 <div
   className="c0"
 >
-  3.08
+  2.05
    (
-  6
+  7
    reviews)
 </div>
 `;

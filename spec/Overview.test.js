@@ -13,6 +13,10 @@ import Overview from '../client/src/components/Overview.jsx'; //eslint-disable-l
 describe('tests for overview component', () => {
   const { reviews, ...rest } = mockData;
 
+  // test('pause', () => {
+  //   return;
+  // })
+
   test('should render', () => {
     const component = <Overview overview={rest} />;
 
@@ -24,6 +28,6 @@ describe('tests for overview component', () => {
     const component = mount(<Overview overview={rest} />);
     const outputText = component.find('div').text();
 
-    expect(outputText).toBe('3.08 (6 reviews)');
+    expect(outputText).toBe('2.05 (7 reviews)');
   });
 });

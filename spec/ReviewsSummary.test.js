@@ -9,6 +9,10 @@ import { reviews } from '../__mocks__/mockData.js';
 import ReviewsSummary from '../client/src/components/ReviewsSummary.jsx';
 
 describe('ReviewsSummary component', () => {
+
+  // test('pause', () => {
+  //   return;
+  // })
   it('should render', () => {
     const component = <ReviewsSummary reviews={reviews} />;
 
