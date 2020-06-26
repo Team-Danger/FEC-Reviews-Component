@@ -11,6 +11,15 @@ const Wrapper = styled.div`
   display: flex;
 `
 
+const ModalButton = styled.button`
+  font-size: 1em;
+  margin-left: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1em 1em;
+  background-color: white;
+`
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -34,11 +43,13 @@ class App extends React.Component {
   }
 
   render() {
+    console.log();
     return (
       <Wrapper>
         <Overview overview={this.state.overview} />
         <PreviewRating overview={this.state.overview} />
         <ReviewsSummary reviews={this.state.reviews.slice(0,6)} />
+        <ModalButton>Show all {this.state.overview.reviewSize} reviews</ModalButton>
       </Wrapper>
     )
   }
