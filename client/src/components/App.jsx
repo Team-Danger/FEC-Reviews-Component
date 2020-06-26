@@ -3,9 +3,11 @@ import axios from 'axios';
 import styled from 'styled-components';
 
 import Overview from './Overview.jsx'
+import ReviewsSummary from './ReviewsSummary.jsx'
 
 const Wrapper = styled.div`
-  font-family: sans-serif;
+  font-family: sans-serif
+  display: flex;
 `
 
 class App extends React.Component {
@@ -13,34 +15,28 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      reviews: {},
+      reviews: [],
       overview: {}}
-
-    this.getFromDB = this.getFromDB.bind(this);
   }
 
   componentDidMount() {
-    this.getFromDB();
-  }
-  
-  getFromDB() { 
-    
     axios.get(`/api/${this.props.listing}`) 
-      .then((results) => {
-        const {reviews, ...rest} = results.data;
-        this.setState({
-          reviews: reviews,
-          overview: rest});
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    .then((results) => {
+      const {reviews, ...rest} = results.data;
+      this.setState({
+        reviews: reviews,
+        overview: rest});
+    })
+    .catch((err) => {
+      console.log(err);
+    });
   }
 
   render() {
     return (
       <Wrapper>
         <Overview overview={this.state.overview} />
+        <ReviewsSummary reviews={this.state.reviews.slice(0,6)} />
       </Wrapper>
     )
   }
