@@ -1,39 +1,229 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ReviewsSummary component should render 1`] = `
-.c0 {
+.c1 {
+  margin: 25px 50px 25px 50px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-<div>
-  <img
-    className="c0"
-    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug11.jpg"
-  />
-  <img
-    className="c0"
-    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug7.jpg"
-  />
-  <img
-    className="c0"
-    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug1.jpg"
-  />
-  <img
-    className="c0"
-    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug19.jpg"
-  />
-  <img
-    className="c0"
-    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug14.jpg"
-  />
-  <img
-    className="c0"
-    src="https://dteamdp.s3-us-west-2.amazonaws.com/pug15.jpg"
-  />
+.c5 {
+  color: #B3B3B3;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug11.jpg"
+        />
+        <div
+          className="c4"
+        >
+          Maureen
+          <br />
+          <span
+            className="c5"
+          >
+            September 2014
+          </span>
+        </div>
+      </div>
+      Ullamco eiusmod tempor in qui dolore ullamco. Incididunt ullamco amet ullamco occaecat proident esse. Voluptate occaecat sint magna incididunt ea cupidatat labore consequat esse ex
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        ...Read More
+      </a>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug7.jpg"
+        />
+        <div
+          className="c4"
+        >
+          Talon
+          <br />
+          <span
+            className="c5"
+          >
+            May 2016
+          </span>
+        </div>
+      </div>
+      Lorem officia quis enim anim anim do excepteur deserunt cupidatat ex. In laboris Lorem commodo enim deserunt ut amet et deserunt occaecat labore cillum minim nulla aliquip. Cillum 
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        ...Read More
+      </a>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug1.jpg"
+        />
+        <div
+          className="c4"
+        >
+          Glen
+          <br />
+          <span
+            className="c5"
+          >
+            November 2017
+          </span>
+        </div>
+      </div>
+      Duis Lorem tempor ex velit tempor excepteur sit elit proident nisi. Pariatur Lorem voluptate aliqua id adipisicing nisi est sit. Ea exercitation mollit id.
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug19.jpg"
+        />
+        <div
+          className="c4"
+        >
+          Ralph
+          <br />
+          <span
+            className="c5"
+          >
+            October 2018
+          </span>
+        </div>
+      </div>
+      Aliqua tempor ad dolore. Adipisicing minim quis ullamco quis nostrud consectetur ad. Cupidatat consequat Lorem eu ex cupidatat. Excepteur reprehenderit nisi id adipisicing mollit e
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        ...Read More
+      </a>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug14.jpg"
+        />
+        <div
+          className="c4"
+        >
+          Davion
+          <br />
+          <span
+            className="c5"
+          >
+            November 2019
+          </span>
+        </div>
+      </div>
+      Dolore velit labore officia voluptate exercitation minim fugiat qui consectetur exercitation elit anim est id. Fugiat laborum reprehenderit exercitation sint nisi qui. Consequat ve
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        ...Read More
+      </a>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug15.jpg"
+        />
+        <div
+          className="c4"
+        >
+          Karlie
+          <br />
+          <span
+            className="c5"
+          >
+            June 2020
+          </span>
+        </div>
+      </div>
+      Et consectetur pariatur tempor quis culpa deserunt quis tempor cillum elit irure dolor. Deserunt consequat commodo eiusmod velit commodo laboris adipisicing cupidatat. Adipisicing 
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        ...Read More
+      </a>
+    </div>
+  </div>
 </div>
 `;

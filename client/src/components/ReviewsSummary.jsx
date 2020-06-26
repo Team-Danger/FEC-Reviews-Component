@@ -13,7 +13,9 @@ const ReviewsSummary = (props) => {
   return (
     <ReviewSummaryStyle>
       {reviews.map((review, idx) => (
-        <PreviewEntry review={review} />
+        <div key={`${review.date}${idx}`}>
+          <PreviewEntry review={review} idx={idx}/>
+        </div>
       ))}   
     </ReviewSummaryStyle>
   )

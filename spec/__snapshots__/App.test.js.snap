@@ -6,6 +6,11 @@ exports[`App component should render 1`] = `
   font-weight: bolder;
 }
 
+.c2 {
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+}
+
 .c0 {
   font-family: sans-serif display:flex;
 }
@@ -19,6 +24,8 @@ exports[`App component should render 1`] = `
      (
      reviews)
   </div>
-  <div />
+  <div
+    className="c2"
+  />
 </div>
 `;
