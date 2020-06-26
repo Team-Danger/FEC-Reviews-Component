@@ -25,7 +25,7 @@ const Bar = styled.div`
 `
 const TextContainer = styled.div`
   width: 25%;
-  flex-direction: row;
+  flex-direction: column;
 `
 const Rating = styled.span`
   font-size: 15px;

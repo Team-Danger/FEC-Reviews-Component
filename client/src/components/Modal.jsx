@@ -23,12 +23,18 @@ const ExitButton = styled.button`
   height: 30px;
   border-radius: 50%;
   font-weight: bold;
-  border: 1px solid black;
   background-color: white;
+  border: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  &:hover {
+    background-color: #B3B3B3;
+  }
 `
 
 const ReviewsWrapper = styled.div`
-  display: flex
+  display: flex;
+  margin: 20px;
 `
 
 class Modal extends React.Component {
@@ -37,15 +43,23 @@ class Modal extends React.Component {
   }
 
   render(){
-    return (
+    const overview = this.props.overview;
+
+    let modal = (
       <ModalWrapper>
-        <ExitButton>X</ExitButton>
+        <ExitButton onClick={this.props.toggleModal}>X</ExitButton>
         <ReviewsWrapper>
-          <Rating />
+          <Rating overview={overview}/>
           <AllReviews />
         </ReviewsWrapper>
       </ModalWrapper>
     )
+
+    if(this.props.modalOpen){
+      return modal;
+    } else {
+      return null;
+    }
   }
 }
 

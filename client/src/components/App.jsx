@@ -20,8 +20,9 @@ const ModalButton = styled.button`
   border-radius: 5px;
   padding: 1em 1em;
   background-color: white;
+  cursor: pointer;
   &:hover {
-    background-color: grey;
+    background-color: #B3B3B3;
   }
 `
 
@@ -31,7 +32,11 @@ class App extends React.Component {
 
     this.state = {
       reviews: [],
-      overview: {}}
+      overview: {},
+      modalOpen: false,
+    }
+
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
   componentDidMount() {
@@ -47,6 +52,11 @@ class App extends React.Component {
     });
   }
 
+  toggleModal() {
+    const toggleState = !this.state.modalOpen;
+    this.setState({modalOpen: toggleState});
+  }
+
   render() {
     console.log();
     return (
@@ -54,8 +64,8 @@ class App extends React.Component {
         <Overview overview={this.state.overview} />
         <PreviewRating overview={this.state.overview} />
         <ReviewsSummary reviews={this.state.reviews.slice(0,6)} />
-        <ModalButton>Show all {this.state.overview.reviewSize} reviews</ModalButton>
-        <Modal />
+        <ModalButton onClick={this.toggleModal}> Show all {this.state.overview.reviewSize} reviews</ModalButton>
+        <Modal overview={this.state.overview} reviews={this.state.reviews} modalOpen={this.state.modalOpen} toggleModal={this.toggleModal}/>
       </Wrapper>
     )
   }
