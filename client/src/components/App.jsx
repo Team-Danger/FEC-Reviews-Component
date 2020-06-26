@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import Overview from './Overview.jsx'
 import ReviewsSummary from './ReviewsSummary.jsx'
 import PreviewRating from './PreviewRating.jsx'
+import Modal from './Modal.jsx'
+
 
 const Wrapper = styled.div`
   font-family: sans-serif
@@ -18,6 +20,9 @@ const ModalButton = styled.button`
   border-radius: 5px;
   padding: 1em 1em;
   background-color: white;
+  &:hover {
+    background-color: grey;
+  }
 `
 
 class App extends React.Component {
@@ -50,6 +55,7 @@ class App extends React.Component {
         <PreviewRating overview={this.state.overview} />
         <ReviewsSummary reviews={this.state.reviews.slice(0,6)} />
         <ModalButton>Show all {this.state.overview.reviewSize} reviews</ModalButton>
+        <Modal />
       </Wrapper>
     )
   }
