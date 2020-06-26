@@ -26,6 +26,9 @@ exports[`App component should render 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-left: 50px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 .c6 {
@@ -34,7 +37,7 @@ exports[`App component should render 1`] = `
   float: left;
   border-radius: 15%;
   background-color: #B3B3B3;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .c7 {
@@ -43,7 +46,7 @@ exports[`App component should render 1`] = `
   float: left;
   border-radius: 15%;
   background-color: black;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .c4 {
@@ -69,6 +72,7 @@ exports[`App component should render 1`] = `
   justify-content: flex-end;
   height: 100%;
   width: 75%;
+  margin-right: 10px;
 }
 
 .c0 {

@@ -16,7 +16,7 @@ const lorem = new LoremIpsum({
 // ===== HELPER FUNCTIONS =====
 const pad3 = (numString) => {
   if (numString.length > 3 || numString.length === 0) {
-    throw (new Error('The number string must be between 1 - 3'));
+    throw 'The number should be between 1 and 100';
   }
   return numString.padStart(3, '0');
 };
@@ -60,7 +60,7 @@ const seedEntry = (seed) => {
 
   // ===== CHECKS =====
   if (typeof seed !== 'number') {
-    throw (new Error('The seed must be an number'));
+    throw 'The seed must be a number';
   }
 
   // ===== DUMMY DATA CREATION ======
