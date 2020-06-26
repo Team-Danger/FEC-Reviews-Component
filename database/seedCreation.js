@@ -68,7 +68,7 @@ const seedEntry = (seed) => {
   for (let count = 1; count <= 6; count += 1) {
     const randomInt = (randomNumber(10, 50) / 10);
     const randomFloat = Number.parseFloat(randomInt).toFixed(1);
-    averagesNum.push(randomInt)
+    averagesNum.push(randomInt);
     averagesFloat.push(randomFloat);
   }
 

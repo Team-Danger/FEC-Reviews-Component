@@ -40,7 +40,7 @@ const RatingContainer = styled.div`
   margin-right: 10px;
 `
 const PreviewRating = ({ overview }) => {
-  console.log(overview);
+
   const { cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg } = overview;
   const cleanPercent = Math.floor((Number(cleanAvg) / 5) * 100);
   const commPercent = Math.floor((Number(commAvg) / 5) * 100);

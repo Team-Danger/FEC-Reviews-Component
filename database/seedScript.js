@@ -12,7 +12,7 @@ const seed = (numberSeeds) => {
 
   Reviews.create(entriesList)
     .then(() => connection.close())
-    .catch((err) => console.error(err));
+    .catch((err) => console.error(err)); //eslint-disable-line
 };
 
 seed(100);
