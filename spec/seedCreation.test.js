@@ -50,14 +50,14 @@ describe('Seeding Script Tests', () => {
 
     expect(hasResponse).toBe(true);
   });
-  
+
   test('number of seeds must be between 1 and 100', () => {
-    expect(() => {seedEntry(1314)}).toThrow('The number should be between 1 and 100');
+    expect(() => { seedEntry(1314); }).toThrowError(new Error('The number should be between 1 and 100'));
   });
 
   test('should throw an error if a non number is used', () => {
-    expect(() => {seedEntry('a')}).toThrow('The seed must be a number');
-    expect(() => {seedEntry(true)}).toThrow('The seed must be a number');
-    expect(() => {seedEntry()}).toThrow('The seed must be a number');
+    expect(() => { seedEntry('a'); }).toThrowError(new Error('The seed must be a number'));
+    expect(() => { seedEntry(true); }).toThrowError(new Error('The seed must be a number'));
+    expect(() => { seedEntry(); }).toThrowError(new Error('The seed must be a number'));
   });
 });

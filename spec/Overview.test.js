@@ -7,15 +7,11 @@ import { mount } from 'enzyme';
 
 import 'babel-polyfill';
 
-import mockData from '../__mocks__/mockData.js'; //eslint-disable-line
-import Overview from '../client/src/components/Overview.jsx'; //eslint-disable-line
+import mockData from '../__mocks__/mockData';
+import Overview from '../client/src/components/Overview';
 
 describe('tests for overview component', () => {
   const { reviews, ...rest } = mockData;
-
-  // test('pause', () => {
-  //   return;
-  // })
 
   test('should render', () => {
     const component = <Overview overview={rest} />;

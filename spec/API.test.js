@@ -16,7 +16,7 @@ describe('API tests', () => {
 
   it('Should 500 a bad GET request', async (done) => {
     await request(app)
-      .get('/api/adflhie')
+      .get('/api/invalidId')
       .then((response) => {
         expect(response.statusCode).toBe(500);
       });

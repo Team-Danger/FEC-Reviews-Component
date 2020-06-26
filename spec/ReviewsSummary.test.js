@@ -5,13 +5,10 @@ import 'jest-enzyme';
 import 'jest-styled-components';
 import { mount } from 'enzyme';
 
-import { reviews } from '../__mocks__/mockData.js'; //eslint-disable-line
-import ReviewsSummary from '../client/src/components/ReviewsSummary.jsx'; //eslint-disable-line
+import { reviews } from '../__mocks__/mockData';
+import ReviewsSummary from '../client/src/components/ReviewsSummary';
 
 describe('ReviewsSummary component', () => {
-  // test('pause', () => {
-  //   return;
-  // })
   it('should render', () => {
     const component = <ReviewsSummary reviews={reviews} />;
 

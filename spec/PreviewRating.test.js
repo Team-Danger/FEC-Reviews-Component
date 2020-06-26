@@ -4,8 +4,10 @@ import renderer from 'react-test-renderer';
 import 'jest-enzyme';
 import 'jest-styled-components';
 
-import { cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg } from '../__mocks__/mockData.js'; //eslint-disable-line
-import PreviewRating from '../client/src/components/PreviewRating.jsx'; //eslint-disable-line
+import {
+  cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg,
+} from '../__mocks__/mockData';
+import PreviewRating from '../client/src/components/PreviewRating';
 
 describe('Preview Rating Components', () => {
   const stats = {

@@ -5,13 +5,9 @@ import 'jest-enzyme';
 import 'jest-styled-components';
 import { mount } from 'enzyme';
 
-import PreviewEntry from '../client/src/components/PreviewEntry.jsx'; //eslint-disable-line
+import PreviewEntry from '../client/src/components/PreviewEntry';
 
 describe('Preview Entry Components', () => {
-  // test('pause', () => {
-  //   return;
-  // })
-
   const review = {
     reviewer_name: 'Maureen',
     dp: '11',
