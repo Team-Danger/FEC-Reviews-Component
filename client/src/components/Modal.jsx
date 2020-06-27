@@ -46,7 +46,7 @@ class Modal extends React.Component {
     const reviews = this.props.reviews;
 
     let modal = (
-      <ModalWrapper>
+      <ModalWrapper onClick={(e) => e.stopPropagation()}>
         <ExitButton onClick={this.props.toggleModal}>X</ExitButton>
         <ReviewsWrapper>
           <Rating overview={overview}/>

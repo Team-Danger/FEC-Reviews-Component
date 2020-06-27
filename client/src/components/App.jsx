@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
@@ -58,15 +58,15 @@ class App extends React.Component {
   }
 
   render() {
-    console.log();
     return (
-      <Wrapper>
+      <Wrapper ref={this.outsideRef} onClick={this.toggleModal}>
         <Overview overview={this.state.overview} />
         <PreviewRating overview={this.state.overview} />
         <ReviewsSummary reviews={this.state.reviews.slice(0,6)} />
         <ModalButton onClick={this.toggleModal}> Show all {this.state.overview.reviewSize} reviews</ModalButton>
         <Modal overview={this.state.overview} reviews={this.state.reviews} modalOpen={this.state.modalOpen} toggleModal={this.toggleModal}/>
       </Wrapper>
+      
     )
   }
 }
