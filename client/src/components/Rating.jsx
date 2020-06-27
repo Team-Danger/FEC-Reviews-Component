@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const RatingWrapper = styled.div`
   flex-direction: column;
   width: 50%;
+  margin-right: 50px;
 `
 
 const OverviewWrapper = styled.div`
@@ -40,7 +41,6 @@ const Bar = styled.div`
 `
 
 const Rating = (props) => {
-  console.log('here are the props: ', props.overview);
   const { cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg } = props.overview;
   const cleanPercent = Math.floor((Number(cleanAvg) / 5) * 100);
   const commPercent = Math.floor((Number(commAvg) / 5) * 100);

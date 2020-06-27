@@ -1,10 +1,24 @@
 import React from 'react'
 
-const AllReviews = () => {
+import ReviewEntry from './ReviewEntry.jsx'
+import styled from 'styled-components';
+
+const ReviewListWrapper = styled.div`
+  flex-direction: column;
+  width: 50%;
+  overflow-y: auto;
+`
+const AllReviews = (props) => {
+  const { reviews, userDp, userName } = props;
+
   return(
-    <div>
-      Hi
-    </div>
+    <ReviewListWrapper>
+      {reviews.map((review, idx) => (
+        <div key={`${review.date}${idx}`}>
+          <ReviewEntry review={review} userDp={userDp} userName={userName} />
+        </div>
+      ))} 
+    </ReviewListWrapper>
   )
 }
 

@@ -2,22 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import moment from 'moment';
 
-// const BasicInfoStyle = styled.div`
-//   display: flex;
-//   flex-direction: column;
-// `
-// const AvatarStyle = styled.img`
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 50%;
-//   flex-direction: column;
-// `
-// const DateStyle = styled.span`
-//   color: #B3B3B3;
-// `
-// const BodyStyle = styled.div`
-//   flex-direction: row;
-// `
 const Wrapper = styled.div`
   margin: 25px 50px 25px 50px;  
 `
@@ -75,7 +59,7 @@ class PreviewEntry extends React.Component {
   }
 
   render() {
-    const { review, idx } = this.props;
+    const { review } = this.props;
     const imageURL = `https://dteamdp.s3-us-west-2.amazonaws.com/pug${review.dp}.jpg`
     const date = moment(review.date).format('MMMM YYYY');
 

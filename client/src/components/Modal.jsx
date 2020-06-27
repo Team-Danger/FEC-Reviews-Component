@@ -5,17 +5,15 @@ import AllReviews from './AllReviews.jsx';
 import Rating from './Rating.jsx'
 
 const ModalWrapper = styled.div`
-  width: 800px;
-  maxWidth: 100%;
+  width: 1000px;
   margin: 0 auto;
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  zIndex: 999;
   background-color: white;
   border: 1px solid black;
   border-radius: 8px;
+  transform: translate(-50%, -50%);
 `
 
 const ExitButton = styled.button`
@@ -35,6 +33,7 @@ const ExitButton = styled.button`
 const ReviewsWrapper = styled.div`
   display: flex;
   margin: 20px;
+  max-height: calc(100vh - 210px);
 `
 
 class Modal extends React.Component {
@@ -44,13 +43,14 @@ class Modal extends React.Component {
 
   render(){
     const overview = this.props.overview;
+    const reviews = this.props.reviews;
 
     let modal = (
       <ModalWrapper>
         <ExitButton onClick={this.props.toggleModal}>X</ExitButton>
         <ReviewsWrapper>
           <Rating overview={overview}/>
-          <AllReviews />
+          <AllReviews reviews={reviews} userDp={overview.userDp} userName={overview.userName}/>
         </ReviewsWrapper>
       </ModalWrapper>
     )
