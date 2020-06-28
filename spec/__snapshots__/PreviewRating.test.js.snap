@@ -8,7 +8,6 @@ exports[`Preview Rating Components should render 1`] = `
 }
 
 .c1 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,9 +16,36 @@ exports[`Preview Rating Components should render 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-right: 50px;
   margin-left: 50px;
+  margin-right: 50px;
   margin-top: 15px;
+  width: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-right: 10px;
+  width: 75%;
+}
+
+.c2 {
+  width: 25%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 .c4 {
@@ -90,32 +116,6 @@ exports[`Preview Rating Components should render 1`] = `
   border-radius: 15%;
   background-color: black;
   margin-right: 5px;
-}
-
-.c2 {
-  width: 25%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 {
-  font-size: 15px;
-  font-weight: bolder;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 100%;
-  width: 75%;
-  margin-right: 10px;
 }
 
 <div

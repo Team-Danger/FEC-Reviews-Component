@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Preview Entry Components should render 1`] = `
-.c0 {
-  margin: 50px 15px 25px 50px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,13 +10,13 @@ exports[`Preview Entry Components should render 1`] = `
 }
 
 .c2 {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 50px;
   margin-right: 10px;
+  width: 50px;
 }
 
 .c3 {
@@ -31,6 +27,10 @@ exports[`Preview Entry Components should render 1`] = `
 
 .c4 {
   color: #B3B3B3;
+}
+
+.c0 {
+  margin: 50px 15px 25px 50px;
 }
 
 <div

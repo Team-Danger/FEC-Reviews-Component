@@ -11,12 +11,9 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.props.listing)
     axios.get(`/api/${this.props.listing}`)
       .then(({data}) => {
-        console.log(data);
         this.setState({data});
-        console.log(this.state.data)
       })
       .catch((err) => {
         throw new Error(`cannot retrieve: ${err}`);
@@ -24,7 +21,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     if(this.state){
       return(
         <Switch>

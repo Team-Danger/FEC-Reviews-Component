@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ReviewsSummary component should render 1`] = `
-.c1 {
-  margin: 25px 50px 25px 50px;
-}
-
-.c6 {
-  margin: 25px 50px 25px 50px;
-  padding-left: 30px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -19,13 +10,13 @@ exports[`ReviewsSummary component should render 1`] = `
 }
 
 .c3 {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 50px;
   margin-right: 10px;
+  width: 50px;
 }
 
 .c4 {
@@ -42,8 +33,17 @@ exports[`ReviewsSummary component should render 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 50%;
   overflow-y: auto;
+  width: 50%;
+}
+
+.c1 {
+  margin: 25px 50px 25px 50px;
+}
+
+.c6 {
+  margin: 25px 50px 25px 50px;
+  padding-left: 30px;
 }
 
 <div
