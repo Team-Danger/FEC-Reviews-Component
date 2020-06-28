@@ -34,26 +34,26 @@ const ReviewEntry = (props) => {
   const reviewerURL = `https://dteamdp.s3-us-west-2.amazonaws.com/pug${review.dp}.jpg`
   const date = moment(review.date).format('MMMM YYYY');
 
-  const aReview = (
-    <Wrapper>
-      <TopStyle>
-        <AvatarStyle src={reviewerURL} />
-        <TopText>
-          {review.reviewer_name}
-          <br></br>
-          <Date>{date}</Date>
-        </TopText>
-      </TopStyle>
-      {review.body}
-    </Wrapper>
-  )
-
-  if (review.respond){
+  let entry;
+  if (review.respond) {
     const listerURL = `https://dteamdp.s3-us-west-2.amazonaws.com/pug${userDp}.jpg`;
-    const aResponse = (
+    entry = (
+      <div>
+      <Wrapper>
+        <TopStyle>
+          <AvatarStyle src={reviewerURL} id='reviewDp'/>
+          <TopText>
+            {review.reviewer_name}
+            <br></br>
+            <Date>{date}</Date>
+          </TopText>
+        </TopStyle>
+        {review.body}
+      </Wrapper>
+
       <ShiftedWrapper>
         <TopStyle>
-          <AvatarStyle src={listerURL} />
+          <AvatarStyle src={listerURL} id='listerDp'/>
           <TopText>
             Response from {userName}
             <br></br>
@@ -62,20 +62,26 @@ const ReviewEntry = (props) => {
         </TopStyle>
         {review.respond}
       </ShiftedWrapper>
-    )
-
-    return(
-      <div>
-        {aReview}
-        {aResponse}
       </div>
+    )
+  } else {
+    entry = (
+      <Wrapper>
+      <TopStyle>
+        <AvatarStyle src={reviewerURL} id='reviewDp'/>
+        <TopText>
+          {review.reviewer_name}
+          <br></br>
+          <Date>{date}</Date>
+        </TopText>
+      </TopStyle>
+      {review.body}
+    </Wrapper>
     )
   }
 
   return (
-    <div>
-      {aReview}
-    </div>
+    entry
   )
 }
 

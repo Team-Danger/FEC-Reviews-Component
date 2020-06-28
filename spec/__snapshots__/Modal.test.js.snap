@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Modal component should render 1`] = `
-.c17 {
+.c19 {
   margin: 25px 50px 25px 50px;
 }
 
-.c22 {
+.c24 {
   margin: 25px 50px 25px 50px;
   padding-left: 30px;
 }
 
-.c18 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,7 +18,7 @@ exports[`Modal component should render 1`] = `
   margin-bottom: 10px;
 }
 
-.c19 {
+.c21 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -28,17 +28,17 @@ exports[`Modal component should render 1`] = `
   margin-right: 10px;
 }
 
-.c20 {
+.c22 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c21 {
+.c23 {
   color: #B3B3B3;
 }
 
-.c16 {
+.c18 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -46,7 +46,7 @@ exports[`Modal component should render 1`] = `
   overflow-y: auto;
 }
 
-.c3 {
+.c4 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -55,12 +55,24 @@ exports[`Modal component should render 1`] = `
   padding-left: 20px;
 }
 
-.c4 {
-  font-size: 1.5em;
+.c5 {
+  font-size: 2em;
   font-weight: bolder;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 {
+.c6 {
+  margin-left: 10px;
+}
+
+.c7 {
   margin-top: 16px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,16 +80,16 @@ exports[`Modal component should render 1`] = `
   display: flex;
 }
 
-.c6 {
+.c8 {
   width: 25%;
 }
 
-.c10 {
+.c12 {
   font-size: 15px;
   font-weight: bolder;
 }
 
-.c7 {
+.c9 {
   height: 100%;
   width: 75%;
   display: -webkit-box;
@@ -90,7 +102,8 @@ exports[`Modal component should render 1`] = `
   justify-content: flex-end;
 }
 
-.c8 {
+.c10 {
+  margin-top: 5px;
   width: 33%;
   height: 0.5em;
   float: left;
@@ -99,7 +112,8 @@ exports[`Modal component should render 1`] = `
   margin-right: 5px;
 }
 
-.c9 {
+.c11 {
+  margin-top: 0;
   width: 20%;
   height: 100%;
   float: left;
@@ -108,7 +122,8 @@ exports[`Modal component should render 1`] = `
   margin-right: 5px;
 }
 
-.c11 {
+.c13 {
+  margin-top: 0;
   width: 24%;
   height: 100%;
   float: left;
@@ -117,7 +132,8 @@ exports[`Modal component should render 1`] = `
   margin-right: 5px;
 }
 
-.c12 {
+.c14 {
+  margin-top: 0;
   width: 52%;
   height: 100%;
   float: left;
@@ -126,7 +142,8 @@ exports[`Modal component should render 1`] = `
   margin-right: 5px;
 }
 
-.c13 {
+.c15 {
+  margin-top: 0;
   width: 80%;
   height: 100%;
   float: left;
@@ -135,7 +152,8 @@ exports[`Modal component should render 1`] = `
   margin-right: 5px;
 }
 
-.c14 {
+.c16 {
+  margin-top: 0;
   width: 38%;
   height: 100%;
   float: left;
@@ -144,7 +162,8 @@ exports[`Modal component should render 1`] = `
   margin-right: 5px;
 }
 
-.c15 {
+.c17 {
+  margin-top: 0;
   width: 32%;
   height: 100%;
   float: left;
@@ -154,36 +173,52 @@ exports[`Modal component should render 1`] = `
 }
 
 .c0 {
+  font-family: Arial,Helvetica,sans-serif;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.c1 {
   width: 1000px;
-  margin: 0 auto;
   position: fixed;
   left: 50%;
   top: 50%;
   background-color: white;
   border: 1px solid black;
   border-radius: 8px;
+  -webkit-animation: bkSImk 1500ms;
+  animation: bkSImk 1500ms;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
 
-.c1 {
+.c2 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   font-weight: bold;
   background-color: white;
   border: white;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-left: 20px;
   margin-top: 20px;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #B3B3B3;
   cursor: pointer;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -196,235 +231,282 @@ exports[`Modal component should render 1`] = `
   className="c0"
   onClick={[Function]}
 >
-  <button
-    className="c1"
-    onClick={[MockFunction]}
-  >
-    X
-  </button>
   <div
-    className="c2"
+    className="c1"
+    onClick={[Function]}
   >
+    <button
+      className="c2"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1.5em"
+        size="1.5em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 12 16"
+        width="1.5em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </button>
     <div
       className="c3"
     >
       <div
         className="c4"
       >
-        2.05
-         (
-        7
-         reviews)
-      </div>
-      <div
-        className="c5"
-      >
-        <span
-          className="c6"
-        >
-          Cleaniness
-        </span>
         <div
-          className="c7"
+          className="c5"
         >
-          <div
-            className="c8"
-            color="#B3B3B3"
-            height="0.5em"
-            width="33%"
+          <svg
+            color="#FF585D"
+            fill="currentColor"
+            height="1em"
+            size="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "#FF585D",
+              }
+            }
+            viewBox="0 0 576 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
-              className="c9"
-              color="black"
-              height="100%"
-              width="20%"
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
             />
-          </div>
+          </svg>
           <span
-            className="c10"
+            className="c6"
           >
-            1
+            2.05
+             (
+            7
+             reviews)
           </span>
         </div>
-      </div>
-      <div
-        className="c5"
-      >
-        <span
-          className="c6"
-        >
-          Accuracy
-        </span>
         <div
           className="c7"
         >
-          <div
-            className="c8"
-            color="#B3B3B3"
-            height="0.5em"
-            width="33%"
-          >
-            <div
-              className="c11"
-              color="black"
-              height="100%"
-              width="24%"
-            />
-          </div>
           <span
-            className="c10"
-          >
-            1.2
-          </span>
-        </div>
-      </div>
-      <div
-        className="c5"
-      >
-        <span
-          className="c6"
-        >
-          Communication
-        </span>
-        <div
-          className="c7"
-        >
-          <div
             className="c8"
-            color="#B3B3B3"
-            height="0.5em"
-            width="33%"
+          >
+            Cleaniness
+          </span>
+          <div
+            className="c9"
           >
             <div
+              className="c10"
+              color="#B3B3B3"
+              height="0.5em"
+              width="33%"
+            >
+              <div
+                className="c11"
+                color="black"
+                height="100%"
+                width="20%"
+              />
+            </div>
+            <span
               className="c12"
-              color="black"
-              height="100%"
-              width="52%"
-            />
+            >
+              1
+            </span>
           </div>
-          <span
-            className="c10"
-          >
-            2.6
-          </span>
         </div>
-      </div>
-      <div
-        className="c5"
-      >
-        <span
-          className="c6"
-        >
-          Location
-        </span>
         <div
           className="c7"
         >
-          <div
+          <span
             className="c8"
-            color="#B3B3B3"
-            height="0.5em"
-            width="33%"
+          >
+            Accuracy
+          </span>
+          <div
+            className="c9"
           >
             <div
-              className="c13"
-              color="black"
-              height="100%"
-              width="80%"
-            />
+              className="c10"
+              color="#B3B3B3"
+              height="0.5em"
+              width="33%"
+            >
+              <div
+                className="c13"
+                color="black"
+                height="100%"
+                width="24%"
+              />
+            </div>
+            <span
+              className="c12"
+            >
+              1.2
+            </span>
           </div>
-          <span
-            className="c10"
-          >
-            4
-          </span>
         </div>
-      </div>
-      <div
-        className="c5"
-      >
-        <span
-          className="c6"
-        >
-          Check-in
-        </span>
         <div
           className="c7"
         >
-          <div
+          <span
             className="c8"
-            color="#B3B3B3"
-            height="0.5em"
-            width="33%"
+          >
+            Communication
+          </span>
+          <div
+            className="c9"
           >
             <div
-              className="c14"
-              color="black"
-              height="100%"
-              width="38%"
-            />
+              className="c10"
+              color="#B3B3B3"
+              height="0.5em"
+              width="33%"
+            >
+              <div
+                className="c14"
+                color="black"
+                height="100%"
+                width="52%"
+              />
+            </div>
+            <span
+              className="c12"
+            >
+              2.6
+            </span>
           </div>
-          <span
-            className="c10"
-          >
-            1.9
-          </span>
         </div>
-      </div>
-      <div
-        className="c5"
-      >
-        <span
-          className="c6"
-        >
-          Value
-        </span>
         <div
           className="c7"
         >
-          <div
+          <span
             className="c8"
-            color="#B3B3B3"
-            height="0.5em"
-            width="33%"
+          >
+            Location
+          </span>
+          <div
+            className="c9"
           >
             <div
-              className="c15"
-              color="black"
-              height="100%"
-              width="32%"
-            />
+              className="c10"
+              color="#B3B3B3"
+              height="0.5em"
+              width="33%"
+            >
+              <div
+                className="c15"
+                color="black"
+                height="100%"
+                width="80%"
+              />
+            </div>
+            <span
+              className="c12"
+            >
+              4
+            </span>
           </div>
+        </div>
+        <div
+          className="c7"
+        >
           <span
-            className="c10"
+            className="c8"
           >
-            1.6
+            Check-in
           </span>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
+              color="#B3B3B3"
+              height="0.5em"
+              width="33%"
+            >
+              <div
+                className="c16"
+                color="black"
+                height="100%"
+                width="38%"
+              />
+            </div>
+            <span
+              className="c12"
+            >
+              1.9
+            </span>
+          </div>
+        </div>
+        <div
+          className="c7"
+        >
+          <span
+            className="c8"
+          >
+            Value
+          </span>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
+              color="#B3B3B3"
+              height="0.5em"
+              width="33%"
+            >
+              <div
+                className="c17"
+                color="black"
+                height="100%"
+                width="32%"
+              />
+            </div>
+            <span
+              className="c12"
+            >
+              1.6
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="c16"
-    >
-      <div>
+      <div
+        className="c18"
+      >
         <div>
           <div
-            className="c17"
+            className="c19"
           >
             <div
-              className="c18"
+              className="c20"
             >
               <img
-                className="c19"
+                className="c21"
+                id="reviewDp"
                 src="https://dteamdp.s3-us-west-2.amazonaws.com/pug25.jpg"
               />
               <div
-                className="c20"
+                className="c22"
               >
                 Clifton
                 <br />
                 <span
-                  className="c21"
+                  className="c23"
                 >
                   April 2015
                 </span>
@@ -433,26 +515,25 @@ exports[`Modal component should render 1`] = `
             Cillum magna cupidatat id veniam eiusmod et fugiat duis labore ipsum adipisicing cillum. Commodo consectetur et amet ipsum et anim aute commodo. Quis aliquip nisi ad ex. Tempor elit esse in reprehenderit eu proident nisi qui aute anim anim dolor dolore.
           </div>
         </div>
-      </div>
-      <div>
         <div>
           <div
-            className="c17"
+            className="c19"
           >
             <div
-              className="c18"
+              className="c20"
             >
               <img
-                className="c19"
+                className="c21"
+                id="reviewDp"
                 src="https://dteamdp.s3-us-west-2.amazonaws.com/pug9.jpg"
               />
               <div
-                className="c20"
+                className="c22"
               >
                 Alvis
                 <br />
                 <span
-                  className="c21"
+                  className="c23"
                 >
                   April 2016
                 </span>
@@ -461,132 +542,135 @@ exports[`Modal component should render 1`] = `
             Tempor do laborum excepteur exercitation ipsum sunt non duis ad culpa minim nisi elit esse laboris. Non in pariatur cupidatat elit. Ullamco ad ut tempor excepteur reprehenderit enim proident sit officia esse mollit. Incididunt labore sunt consectetur qui aliqua sunt amet non eu excepteur aute sunt minim esse laborum. Qui excepteur proident pariatur consectetur velit. Ut nisi voluptate id nisi aliquip ad.
           </div>
         </div>
-      </div>
-      <div>
         <div>
-          <div
-            className="c17"
-          >
+          <div>
             <div
-              className="c18"
+              className="c19"
             >
-              <img
-                className="c19"
-                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug10.jpg"
-              />
               <div
                 className="c20"
               >
-                Samir
-                <br />
-                <span
+                <img
                   className="c21"
+                  id="reviewDp"
+                  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug10.jpg"
+                />
+                <div
+                  className="c22"
                 >
-                  September 2016
-                </span>
+                  Samir
+                  <br />
+                  <span
+                    className="c23"
+                  >
+                    September 2016
+                  </span>
+                </div>
               </div>
+              Cupidatat voluptate aliqua veniam ullamco ut officia et velit dolor.
             </div>
-            Cupidatat voluptate aliqua veniam ullamco ut officia et velit dolor.
-          </div>
-          <div
-            className="c22"
-          >
             <div
-              className="c18"
+              className="c24"
             >
-              <img
-                className="c19"
-                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
-              />
               <div
                 className="c20"
               >
-                Response from 
-                Herbert
-                <br />
-                <span
+                <img
                   className="c21"
+                  id="listerDp"
+                  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+                />
+                <div
+                  className="c22"
                 >
-                  September 2016
-                </span>
+                  Response from 
+                  Herbert
+                  <br />
+                  <span
+                    className="c23"
+                  >
+                    September 2016
+                  </span>
+                </div>
               </div>
+              Aliqua laborum sint enim occaecat adipisicing magna laboris non tempor consectetur incididunt. Duis culpa quis do nisi eiusmod irure id aute voluptate laborum nisi eiusmod est culpa.
             </div>
-            Aliqua laborum sint enim occaecat adipisicing magna laboris non tempor consectetur incididunt. Duis culpa quis do nisi eiusmod irure id aute voluptate laborum nisi eiusmod est culpa.
           </div>
         </div>
-      </div>
-      <div>
         <div>
-          <div
-            className="c17"
-          >
+          <div>
             <div
-              className="c18"
+              className="c19"
             >
-              <img
-                className="c19"
-                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug20.jpg"
-              />
               <div
                 className="c20"
               >
-                Ismael
-                <br />
-                <span
+                <img
                   className="c21"
+                  id="reviewDp"
+                  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug20.jpg"
+                />
+                <div
+                  className="c22"
                 >
-                  August 2017
-                </span>
+                  Ismael
+                  <br />
+                  <span
+                    className="c23"
+                  >
+                    August 2017
+                  </span>
+                </div>
               </div>
+              Est ut anim ipsum enim mollit excepteur sit. Sunt irure esse adipisicing tempor exercitation eu ex dolore sunt do officia pariatur. Dolor enim incididunt aute consectetur nisi ullamco quis. Eiusmod eiusmod velit excepteur non ut pariatur. Non deserunt aliqua do elit reprehenderit consectetur nisi est voluptate. Elit voluptate magna dolor qui ut amet fugiat nostrud deserunt anim Lorem aliqua cupidatat. Consequat in cupidatat dolor sunt culpa non esse id cillum laborum ut minim Lorem nostrud labore.
             </div>
-            Est ut anim ipsum enim mollit excepteur sit. Sunt irure esse adipisicing tempor exercitation eu ex dolore sunt do officia pariatur. Dolor enim incididunt aute consectetur nisi ullamco quis. Eiusmod eiusmod velit excepteur non ut pariatur. Non deserunt aliqua do elit reprehenderit consectetur nisi est voluptate. Elit voluptate magna dolor qui ut amet fugiat nostrud deserunt anim Lorem aliqua cupidatat. Consequat in cupidatat dolor sunt culpa non esse id cillum laborum ut minim Lorem nostrud labore.
-          </div>
-          <div
-            className="c22"
-          >
             <div
-              className="c18"
+              className="c24"
             >
-              <img
-                className="c19"
-                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
-              />
               <div
                 className="c20"
               >
-                Response from 
-                Herbert
-                <br />
-                <span
+                <img
                   className="c21"
+                  id="listerDp"
+                  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+                />
+                <div
+                  className="c22"
                 >
-                  August 2017
-                </span>
+                  Response from 
+                  Herbert
+                  <br />
+                  <span
+                    className="c23"
+                  >
+                    August 2017
+                  </span>
+                </div>
               </div>
+              Eu tempor commodo ut nisi nulla ad ex. Aliquip nostrud minim cillum consequat. Duis aliquip aliquip proident non cillum deserunt laboris sit incididunt. Ea labore exercitation occaecat ipsum id nulla ipsum eu nostrud deserunt. Ut commodo velit cupidatat et nisi mollit aliqua adipisicing amet exercitation cillum nostrud ut. Ut Lorem culpa minim quis et. Excepteur veniam laboris sit mollit consequat sint ad. Magna dolor dolor ullamco officia ex duis aliquip aute ullamco quis.
             </div>
-            Eu tempor commodo ut nisi nulla ad ex. Aliquip nostrud minim cillum consequat. Duis aliquip aliquip proident non cillum deserunt laboris sit incididunt. Ea labore exercitation occaecat ipsum id nulla ipsum eu nostrud deserunt. Ut commodo velit cupidatat et nisi mollit aliqua adipisicing amet exercitation cillum nostrud ut. Ut Lorem culpa minim quis et. Excepteur veniam laboris sit mollit consequat sint ad. Magna dolor dolor ullamco officia ex duis aliquip aute ullamco quis.
           </div>
         </div>
-      </div>
-      <div>
         <div>
           <div
-            className="c17"
+            className="c19"
           >
             <div
-              className="c18"
+              className="c20"
             >
               <img
-                className="c19"
+                className="c21"
+                id="reviewDp"
                 src="https://dteamdp.s3-us-west-2.amazonaws.com/pug16.jpg"
               />
               <div
-                className="c20"
+                className="c22"
               >
                 Kolby
                 <br />
                 <span
-                  className="c21"
+                  className="c23"
                 >
                   May 2018
                 </span>
@@ -595,110 +679,114 @@ exports[`Modal component should render 1`] = `
             Anim minim qui culpa anim. Esse exercitation sit sint tempor aliqua proident. Ullamco duis tempor cupidatat sunt quis labore mollit tempor. Ea enim aliquip Lorem do aliquip exercitation et dolor cupidatat. Qui ipsum mollit sit deserunt ipsum consectetur commodo duis excepteur labore qui.
           </div>
         </div>
-      </div>
-      <div>
         <div>
-          <div
-            className="c17"
-          >
+          <div>
             <div
-              className="c18"
+              className="c19"
             >
-              <img
-                className="c19"
-                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug15.jpg"
-              />
               <div
                 className="c20"
               >
-                Avery
-                <br />
-                <span
+                <img
                   className="c21"
+                  id="reviewDp"
+                  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug15.jpg"
+                />
+                <div
+                  className="c22"
                 >
-                  February 2019
-                </span>
+                  Avery
+                  <br />
+                  <span
+                    className="c23"
+                  >
+                    February 2019
+                  </span>
+                </div>
               </div>
+              Lorem laborum est ullamco. Minim dolor incididunt magna velit aute officia. Sunt fugiat elit non laborum in incididunt duis excepteur laboris tempor.
             </div>
-            Lorem laborum est ullamco. Minim dolor incididunt magna velit aute officia. Sunt fugiat elit non laborum in incididunt duis excepteur laboris tempor.
-          </div>
-          <div
-            className="c22"
-          >
             <div
-              className="c18"
+              className="c24"
             >
-              <img
-                className="c19"
-                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
-              />
               <div
                 className="c20"
               >
-                Response from 
-                Herbert
-                <br />
-                <span
+                <img
                   className="c21"
+                  id="listerDp"
+                  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+                />
+                <div
+                  className="c22"
                 >
-                  February 2019
-                </span>
+                  Response from 
+                  Herbert
+                  <br />
+                  <span
+                    className="c23"
+                  >
+                    February 2019
+                  </span>
+                </div>
               </div>
+              Nulla irure et Lorem eiusmod fugiat commodo commodo fugiat labore officia. Magna dolore eiusmod tempor velit enim laboris cillum adipisicing. In consectetur consequat reprehenderit veniam mollit labore dolor. Labore aute exercitation aliqua tempor laborum culpa culpa laborum irure eu aute non excepteur reprehenderit incididunt. Ex mollit occaecat qui. Magna aliquip ipsum ea exercitation consequat nulla exercitation reprehenderit. Incididunt minim amet reprehenderit sunt cillum voluptate velit minim. Ex sunt ad sit cillum nisi laborum aliqua ex eu.
             </div>
-            Nulla irure et Lorem eiusmod fugiat commodo commodo fugiat labore officia. Magna dolore eiusmod tempor velit enim laboris cillum adipisicing. In consectetur consequat reprehenderit veniam mollit labore dolor. Labore aute exercitation aliqua tempor laborum culpa culpa laborum irure eu aute non excepteur reprehenderit incididunt. Ex mollit occaecat qui. Magna aliquip ipsum ea exercitation consequat nulla exercitation reprehenderit. Incididunt minim amet reprehenderit sunt cillum voluptate velit minim. Ex sunt ad sit cillum nisi laborum aliqua ex eu.
           </div>
         </div>
-      </div>
-      <div>
         <div>
-          <div
-            className="c17"
-          >
+          <div>
             <div
-              className="c18"
+              className="c19"
             >
-              <img
-                className="c19"
-                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug29.jpg"
-              />
               <div
                 className="c20"
               >
-                Tremaine
-                <br />
-                <span
+                <img
                   className="c21"
+                  id="reviewDp"
+                  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug29.jpg"
+                />
+                <div
+                  className="c22"
                 >
-                  June 2019
-                </span>
+                  Tremaine
+                  <br />
+                  <span
+                    className="c23"
+                  >
+                    June 2019
+                  </span>
+                </div>
               </div>
+              Consequat adipisicing veniam non laboris nisi laborum aliquip elit. Anim magna ad esse quis consectetur velit irure est irure adipisicing id aliquip commodo. Nostrud consequat laboris cillum tempor cupidatat culpa enim officia. Do commodo elit quis. Reprehenderit consequat consequat cillum excepteur do sunt.
             </div>
-            Consequat adipisicing veniam non laboris nisi laborum aliquip elit. Anim magna ad esse quis consectetur velit irure est irure adipisicing id aliquip commodo. Nostrud consequat laboris cillum tempor cupidatat culpa enim officia. Do commodo elit quis. Reprehenderit consequat consequat cillum excepteur do sunt.
-          </div>
-          <div
-            className="c22"
-          >
             <div
-              className="c18"
+              className="c24"
             >
-              <img
-                className="c19"
-                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
-              />
               <div
                 className="c20"
               >
-                Response from 
-                Herbert
-                <br />
-                <span
+                <img
                   className="c21"
+                  id="listerDp"
+                  src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+                />
+                <div
+                  className="c22"
                 >
-                  June 2019
-                </span>
+                  Response from 
+                  Herbert
+                  <br />
+                  <span
+                    className="c23"
+                  >
+                    June 2019
+                  </span>
+                </div>
               </div>
+              Laboris aliqua anim ex laboris est ad amet ex nisi aliquip cillum enim. Est excepteur ipsum eiusmod ipsum aliqua anim id enim ex dolore ut. Mollit labore et nisi cillum tempor nulla. Eiusmod cupidatat veniam sunt. Aliqua nisi anim et commodo cillum aute tempor magna reprehenderit qui deserunt. Ipsum officia fugiat est et quis do esse ullamco qui deserunt veniam minim amet quis dolor. Amet exercitation deserunt dolor in veniam minim labore ut consectetur. Deserunt voluptate adipisicing commodo duis fugiat adipisicing cupidatat culpa irure excepteur in velit.
             </div>
-            Laboris aliqua anim ex laboris est ad amet ex nisi aliquip cillum enim. Est excepteur ipsum eiusmod ipsum aliqua anim id enim ex dolore ut. Mollit labore et nisi cillum tempor nulla. Eiusmod cupidatat veniam sunt. Aliqua nisi anim et commodo cillum aute tempor magna reprehenderit qui deserunt. Ipsum officia fugiat est et quis do esse ullamco qui deserunt veniam minim amet quis dolor. Amet exercitation deserunt dolor in veniam minim labore ut consectetur. Deserunt voluptate adipisicing commodo duis fugiat adipisicing cupidatat culpa irure excepteur in velit.
           </div>
         </div>
       </div>

@@ -28,13 +28,4 @@ describe('Modal component', () => {
     expect(wrapper.exists('Rating')).toBe(true);
     expect(wrapper.exists('AllReviews')).toBe(true);
   });
-
-  it('should toggle the modal display off when x is clicked', () => {
-    const wrapper = mount(<Modal overview={rest} reviews={reviews} modalOpen={mockState} toggleModal={mockFunction}/>);
-    expect(mockFunction).not.toHaveBeenCalled();
-
-    wrapper.find('button').simulate('click')
-
-    expect(mockFunction).toHaveBeenCalled();
-  })
 });

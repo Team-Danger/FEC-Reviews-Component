@@ -33,30 +33,29 @@ exports[`Review Entry Component should render 1`] = `
   color: #B3B3B3;
 }
 
-<div>
+<div
+  className="c0"
+>
   <div
-    className="c0"
+    className="c1"
   >
+    <img
+      className="c2"
+      id="reviewDp"
+      src="https://dteamdp.s3-us-west-2.amazonaws.com/pug11.jpg"
+    />
     <div
-      className="c1"
+      className="c3"
     >
-      <img
-        className="c2"
-        src="https://dteamdp.s3-us-west-2.amazonaws.com/pug11.jpg"
-      />
-      <div
-        className="c3"
+      Michael
+      <br />
+      <span
+        className="c4"
       >
-        Michael
-        <br />
-        <span
-          className="c4"
-        >
-          July 2016
-        </span>
-      </div>
+        July 2016
+      </span>
     </div>
-    here is some text
   </div>
+  here is some text
 </div>
 `;

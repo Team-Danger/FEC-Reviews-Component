@@ -2,7 +2,7 @@
 
 exports[`Preview Entry Components should render 1`] = `
 .c0 {
-  margin: 25px 50px 25px 50px;
+  margin: 50px 15px 25px 50px;
 }
 
 .c1 {
@@ -46,7 +46,9 @@ exports[`Preview Entry Components should render 1`] = `
     <div
       className="c3"
     >
-      Maureen
+      <b>
+        Maureen
+      </b>
       <br />
       <span
         className="c4"
@@ -55,12 +57,14 @@ exports[`Preview Entry Components should render 1`] = `
       </span>
     </div>
   </div>
-  111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+  111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111...     
   <a
     href="#"
     onClick={[Function]}
   >
-    ...Read More
+    <b>
+      read more
+    </b>
   </a>
 </div>
 `;

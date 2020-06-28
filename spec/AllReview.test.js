@@ -5,11 +5,13 @@ import 'jest-enzyme';
 import 'jest-styled-components';
 import { mount } from 'enzyme';
 
-import { reviews, ...rest } from '../__mocks__/mockData';
+import mockData from '../__mocks__/mockData';
 import AllReviews from '../client/src/components/AllReviews';
 
 describe('ReviewsSummary component', () => {
+  const { reviews, ...rest } = mockData;
   const { userDp, userName } = rest
+  
   it('should render', () => {
     const component = <AllReviews reviews={reviews} userDp={userDp} userName={userName}/>;
 
