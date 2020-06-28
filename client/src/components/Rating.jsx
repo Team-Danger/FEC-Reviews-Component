@@ -1,53 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+
+// Styling imports
+import { RatingWrapper, OverviewWrapper, OverviewText, CategoryWrapper, RatingContainer} from './styles/staticStyles.style'
+import { TextContainer, RatingText } from './styles/generalUse.style';
+import { Bar } from './styles/propStyles.style';
 import { FaStar } from "react-icons/fa";
-
-const RatingWrapper = styled.div`
-  flex-direction: column;
-  width: 50%;
-  margin-right: 50px;
-  padding-left: 20px
-`
-
-const OverviewWrapper = styled.div`
-  font-size: 2em;
-  font-weight: bolder;
-  display: flex;
-  align-items: center;
-`
-
-const OverviewText = styled.span`
-  margin-left: 10px
-`
-
-const CategoryWrapper = styled.div`
-  margin-top: 16px;
-  display: flex;
-`
-
-const TextContainer = styled.span`
-  width: 25%;
-`
-const RatingText = styled.span`
-  font-size: 15px;
-  font-weight: bolder;
-`
-const RatingContainer = styled.div`
-  height: 100%;
-  width: 75%;
-  display: flex;
-  justify-content: flex-end;
-`
-
-const Bar = styled.div`
-  margin-top: ${props => props.margin ? props.margin : 0};
-  width: ${props => props.width};
-  height: ${props => props.height};
-  float: left;
-  border-radius: 15%;
-  background-color: ${props => props.color};
-  margin-right: 5px;
-`
 
 const Rating = (props) => {
   const { cleanAvg, commAvg, accuracyAvg, valueAvg, locationAvg, checkinAvg } = props.overview;

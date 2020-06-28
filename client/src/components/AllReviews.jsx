@@ -1,13 +1,9 @@
 import React from 'react'
 
 import ReviewEntry from './ReviewEntry.jsx'
-import styled from 'styled-components';
 
-const ReviewListWrapper = styled.div`
-  flex-direction: column;
-  width: 50%;
-  overflow-y: auto;
-`
+import { ReviewListWrapper } from './styles/staticStyles.style'
+
 const AllReviews = (props) => {
   const { reviews, userDp, userName } = props;
 

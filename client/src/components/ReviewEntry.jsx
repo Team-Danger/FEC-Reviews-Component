@@ -1,33 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import moment from 'moment';
 
-const Wrapper = styled.div`
-  margin: 25px 50px 25px 50px;  
-`
-
-const ShiftedWrapper = styled(Wrapper)`
-  padding-left: 30px;
-`
-
-const TopStyle = styled.div`
-  display: flex;
-  margin-bottom: 10px;
-`
-const AvatarStyle = styled.img`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  flex-direction: column;
-  margin-right: 10px;
-`
-const TopText = styled.div`
-  flex-direction: row
-`
-const Date = styled.span`
-  color: #B3B3B3;
-`
-
+//Styles import
+import { TopStyle, AvatarStyle, TopText, Date } from './styles/generalUse.style';
+import {EntryWrapper, ShiftedWrapper} from './styles/staticStyles.style';
 
 const ReviewEntry = (props) => {
   const { review, userDp, userName } = props;
@@ -39,9 +15,36 @@ const ReviewEntry = (props) => {
     const listerURL = `https://dteamdp.s3-us-west-2.amazonaws.com/pug${userDp}.jpg`;
     entry = (
       <div>
-      <Wrapper>
+        <EntryWrapper>
+          <TopStyle>
+            <AvatarStyle src={reviewerURL} />
+            <TopText>
+              {review.reviewer_name}
+              <br></br>
+              <Date>{date}</Date>
+            </TopText>
+          </TopStyle>
+          {review.body}
+        </EntryWrapper>
+
+        <ShiftedWrapper>
+          <TopStyle>
+            <AvatarStyle src={listerURL} />
+            <TopText>
+              Response from {userName}
+              <br></br>
+              <Date>{date}</Date>
+            </TopText>
+          </TopStyle>
+          {review.respond}
+        </ShiftedWrapper>
+      </div>
+    )
+  } else {
+    entry = (
+      <EntryWrapper>
         <TopStyle>
-          <AvatarStyle src={reviewerURL} id='reviewDp'/>
+          <AvatarStyle src={reviewerURL} />
           <TopText>
             {review.reviewer_name}
             <br></br>
@@ -49,34 +52,7 @@ const ReviewEntry = (props) => {
           </TopText>
         </TopStyle>
         {review.body}
-      </Wrapper>
-
-      <ShiftedWrapper>
-        <TopStyle>
-          <AvatarStyle src={listerURL} id='listerDp'/>
-          <TopText>
-            Response from {userName}
-            <br></br>
-            <Date>{date}</Date>
-          </TopText>
-        </TopStyle>
-        {review.respond}
-      </ShiftedWrapper>
-      </div>
-    )
-  } else {
-    entry = (
-      <Wrapper>
-      <TopStyle>
-        <AvatarStyle src={reviewerURL} id='reviewDp'/>
-        <TopText>
-          {review.reviewer_name}
-          <br></br>
-          <Date>{date}</Date>
-        </TopText>
-      </TopStyle>
-      {review.body}
-    </Wrapper>
+    </EntryWrapper>
     )
   }
 

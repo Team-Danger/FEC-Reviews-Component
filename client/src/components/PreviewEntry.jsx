@@ -1,28 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import moment from 'moment';
 
-const Wrapper = styled.div`
-  margin: 50px 15px 25px 50px; 
-`
-const TopStyle = styled.div`
-  display: flex;
-  margin-bottom: 10px;
-`
-const AvatarStyle = styled.img`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  flex-direction: column;
-  margin-right: 10px;
-`
-const TopText = styled.div`
-  flex-direction: row
-`
+// Styles import
+import { TopStyle, AvatarStyle, TopText, Date } from './styles/generalUse.style';
+import { PreviewWrapper } from './styles/staticStyles.style';
 
-const Date = styled.span`
-  color: #B3B3B3;
-`
 class PreviewEntry extends React.Component {
   constructor(props) {
     super(props)
@@ -68,7 +50,7 @@ class PreviewEntry extends React.Component {
 
     if(this.state.readMore) {
       return(
-        <Wrapper>
+        <PreviewWrapper>
           <TopStyle>
             <AvatarStyle src={imageURL} />
             <TopText>
@@ -79,11 +61,11 @@ class PreviewEntry extends React.Component {
           </TopStyle>
           {`${this.state.display}...     `}   
           <a href='#' onClick={this.handleClick}><b>read more</b></a>
-        </Wrapper>
+        </PreviewWrapper>
       )
     } else {
       return(
-        <Wrapper>
+        <PreviewWrapper>
           <TopStyle>
             <AvatarStyle src={imageURL} />
             <TopText>
@@ -93,7 +75,7 @@ class PreviewEntry extends React.Component {
             </TopText>
           </TopStyle>
           {this.state.display}
-        </Wrapper>
+        </PreviewWrapper>
       )
     }
   }
