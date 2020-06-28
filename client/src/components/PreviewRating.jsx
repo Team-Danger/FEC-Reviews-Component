@@ -20,7 +20,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer>Cleanliness</TextContainer>
         <RatingGrid>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
           </Bar>
           <RatingText>{cleanAvg}</RatingText>
@@ -30,7 +30,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer padding={50}>Accuracy</TextContainer>
         <RatingGrid>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${accuracyPercent}%`} color='black' height='100%'/>
           </Bar> 
           <RatingText>{accuracyAvg}</RatingText>
@@ -40,7 +40,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer>Communication</TextContainer>
         <RatingGrid>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${commPercent}%`} color='black' height='100%'/> 
           </Bar>
           <RatingText>{commAvg}</RatingText>
@@ -50,7 +50,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer padding={50}>Location</TextContainer>
         <RatingGrid>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${locationPercent}%`} color='black' height='100%'/>
           </Bar> 
           <RatingText>{locationAvg}</RatingText>
@@ -60,7 +60,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer>Check-in</TextContainer>
         <RatingGrid>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${checkinPercent}%`} color='black' height='100%'/> 
           </Bar>
           <RatingText>{checkinAvg}</RatingText>
@@ -70,7 +70,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer padding={50}>Value</TextContainer>
         <RatingGrid>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${valuePercent}%`} color='black' height='100%'/>
           </Bar> 
           <RatingText>{valueAvg}</RatingText>

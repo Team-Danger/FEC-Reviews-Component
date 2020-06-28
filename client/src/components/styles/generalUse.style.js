@@ -24,7 +24,7 @@ const TextContainer = styled.div`
   flex-direction: column;
 `;
 const RatingText = styled.span`
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bolder;
 `;
 export {

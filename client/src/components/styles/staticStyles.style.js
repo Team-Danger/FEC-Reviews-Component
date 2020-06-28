@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 const ReviewListWrapper = styled.div`
   flex-direction: column;
   overflow-y: auto;
-  width: 50%;
+  width: 65%;
 `;
 
 // Modal
@@ -18,7 +18,7 @@ const modalSlide = keyframes`
 `;
 
 const ModalWrapper = styled.div`
-  animation: ${modalSlide} 1500ms;
+  animation: ${modalSlide} 650ms;
   background-color: white;
   border-radius: 8px;
   border: 1px solid black;
@@ -27,6 +27,7 @@ const ModalWrapper = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
+  height: 750px;
 `;
 
 const ExitButton = styled.button`
@@ -86,12 +87,12 @@ const RatingGrid = styled.div`
   margin-right: 10px;
   width: 75%;
 `;
-// Ratingikhb
+// Rating
 const RatingWrapper = styled.div`
   flex-direction: column;
   margin-right: 50px;
-  padding-left: 20px
-  width: 50%;
+  padding-left: 20px;
+  width: 35%;
 `;
 
 const OverviewWrapper = styled.div`
@@ -102,12 +103,13 @@ const OverviewWrapper = styled.div`
 `;
 
 const OverviewText = styled.span`
-  margin-left: 10px
+  margin-left: 10px;
 `;
 
 const CategoryWrapper = styled.div`
   display: flex;
   margin-top: 16px;
+  font-size: 15px;
 `;
 
 const RatingContainer = styled.div`

@@ -23,7 +23,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Cleaniness</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{cleanAvg}</RatingText>
@@ -33,7 +33,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Accuracy</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${accuracyPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{accuracyAvg}</RatingText>
@@ -43,7 +43,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Communication</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${commPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{commAvg}</RatingText>
@@ -53,7 +53,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Location</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${locationPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{locationAvg}</RatingText>
@@ -63,7 +63,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Check-in</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${checkinPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{checkinAvg}</RatingText>
@@ -73,7 +73,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Value</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
+          <Bar width='33%' color='#B3B3B3' height='0.25em' margin='5px'>
             <Bar width={`${valuePercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{valueAvg}</RatingText>
