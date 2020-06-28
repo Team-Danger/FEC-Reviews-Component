@@ -17,6 +17,7 @@ const CategoryContainer = styled.div`
 `
 
 const Bar = styled.div`
+  margin-top: ${props => props.margin ? props.margin : 0};
   width: ${props => props.width};
   height: ${props => props.height};
   float: left;
@@ -55,7 +56,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer>Cleanliness</TextContainer>
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
           </Bar>
           <Rating>{cleanAvg}</Rating>
@@ -65,7 +66,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer padding={50}>Accuracy</TextContainer>
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${accuracyPercent}%`} color='black' height='100%'/>
           </Bar> 
           <Rating>{accuracyAvg}</Rating>
@@ -75,7 +76,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer>Communication</TextContainer>
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${commPercent}%`} color='black' height='100%'/> 
           </Bar>
           <Rating>{commAvg}</Rating>
@@ -85,7 +86,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer padding={50}>Location</TextContainer>
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${locationPercent}%`} color='black' height='100%'/>
           </Bar> 
           <Rating>{locationAvg}</Rating>
@@ -95,7 +96,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer>Check-in</TextContainer>
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${checkinPercent}%`} color='black' height='100%'/> 
           </Bar>
           <Rating>{checkinAvg}</Rating>
@@ -105,7 +106,7 @@ const PreviewRating = ({ overview }) => {
       <CategoryContainer>
         <TextContainer padding={50}>Value</TextContainer>
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${valuePercent}%`} color='black' height='100%'/>
           </Bar> 
           <Rating>{valueAvg}</Rating>

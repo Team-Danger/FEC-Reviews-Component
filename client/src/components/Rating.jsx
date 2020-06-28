@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaStar } from "react-icons/fa";
 
 const RatingWrapper = styled.div`
   flex-direction: column;
@@ -9,8 +10,14 @@ const RatingWrapper = styled.div`
 `
 
 const OverviewWrapper = styled.div`
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bolder;
+  display: flex;
+  align-items: center;
+`
+
+const OverviewText = styled.span`
+  margin-left: 10px
 `
 
 const CategoryWrapper = styled.div`
@@ -33,6 +40,7 @@ const RatingContainer = styled.div`
 `
 
 const Bar = styled.div`
+  margin-top: ${props => props.margin ? props.margin : 0};
   width: ${props => props.width};
   height: ${props => props.height};
   float: left;
@@ -53,12 +61,12 @@ const Rating = (props) => {
   return(
     <RatingWrapper>
 
-      <OverviewWrapper>{props.overview.avg} ({props.overview.reviewSize} reviews)</OverviewWrapper>
+      <OverviewWrapper><FaStar size='1em' color='#FF585D'/><OverviewText>{props.overview.avg} ({props.overview.reviewSize} reviews)</OverviewText></OverviewWrapper>
 
       <CategoryWrapper>
         <TextContainer>Cleaniness</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{cleanAvg}</RatingText>
@@ -68,7 +76,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Accuracy</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${accuracyPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{accuracyAvg}</RatingText>
@@ -78,7 +86,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Communication</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${commPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{commAvg}</RatingText>
@@ -88,7 +96,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Location</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${locationPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{locationAvg}</RatingText>
@@ -98,7 +106,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Check-in</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${checkinPercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{checkinAvg}</RatingText>
@@ -108,7 +116,7 @@ const Rating = (props) => {
       <CategoryWrapper>
         <TextContainer>Value</TextContainer> 
         <RatingContainer>
-          <Bar width='33%' color='#B3B3B3' height='0.5em'>
+          <Bar width='33%' color='#B3B3B3' height='0.5em' margin='5px'>
             <Bar width={`${valuePercent}%`} color='black' height='100%'/> 
           </Bar>
         <RatingText>{valueAvg}</RatingText>

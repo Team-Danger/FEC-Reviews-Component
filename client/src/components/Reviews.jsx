@@ -1,17 +1,16 @@
 import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
+import { FaStar } from "react-icons/fa";
 
-import Overview from './Overview.jsx'
 import ReviewsSummary from './ReviewsSummary.jsx'
 import PreviewRating from './PreviewRating.jsx'
 import Modal from './Modal.jsx'
 
 const Wrapper = styled.div`
-  font-family: Calibre;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60vw;
+  margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-right: 50px;
@@ -31,15 +30,26 @@ const ModalButton = styled.button`
     background-color: #B3B3B3;
   }
 `
+const OverviewWrapper = styled.div`
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+`
+const OverviewText = styled.span`
+  margin-left: 10px
+`
 
 const Reviews = (props) => {
-  const { data, modalOpen, listing } = props;
+  const { data, modalOpen } = props;
   const { reviews, ...rest } = data;
 
   return (
     <Wrapper>
       <Modal overview={rest} reviews={reviews} modalOpen={modalOpen} />
-      <Overview overview={rest} />
+      <OverviewWrapper><FaStar size='1em' color='#FF585D'/><OverviewText>{rest.avg} ({rest.reviewSize} reviews)</OverviewText></OverviewWrapper>
       <PreviewRating overview={rest} />
       <ReviewsSummary reviews={reviews.slice(0, 6)} />
       <Link to='/reviews'><ModalButton> Show all {rest.reviewSize} reviews</ModalButton></Link>

@@ -1,45 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 
 import Reviews from './Reviews.jsx'
-
-// import Overview from './Overview.jsx'
-// import ReviewsSummary from './ReviewsSummary.jsx'
-// import PreviewRating from './PreviewRating.jsx'
-// import Modal from './Modal.jsx'
-
-const MainWrapper = styled.div`
-  height: auto;
-  width: auto;
-  margin: 0px;
-`
-
-// const Wrapper = styled.div`
-//   font-family: Calibre;
-//   margin-top: 50px;
-//   margin-left: 50px;
-//   margin-right: 50px;
-//   padding-top: 25px;
-//   padding-bottom: 25px;
-//   padding-right: 50px;
-//   border-top: 1px solid #B3B3B3;
-//   border-bottom: 1px solid #B3B3B3;
-// `
-
-// const ModalButton = styled.button`
-//   font-size: 1em;
-//   margin-left: 50px;
-//   border: 1px solid black;
-//   border-radius: 5px;
-//   padding: 1em 1em;
-//   background-color: white;
-//   cursor: pointer;
-//   &:hover {
-//     background-color: #B3B3B3;
-//   }
-// `
 
 class App extends React.Component {
 

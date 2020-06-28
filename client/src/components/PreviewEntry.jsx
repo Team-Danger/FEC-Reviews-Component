@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import moment from 'moment';
 
 const Wrapper = styled.div`
-  margin: 25px 50px 25px 50px;  
+  margin: 50px 15px 25px 50px; 
 `
 const TopStyle = styled.div`
   display: flex;
@@ -19,6 +19,7 @@ const AvatarStyle = styled.img`
 const TopText = styled.div`
   flex-direction: row
 `
+
 const Date = styled.span`
   color: #B3B3B3;
 `
@@ -71,13 +72,13 @@ class PreviewEntry extends React.Component {
           <TopStyle>
             <AvatarStyle src={imageURL} />
             <TopText>
-              {review.reviewer_name}
+              <b>{review.reviewer_name}</b>
               <br></br>
               <Date>{date}</Date>
             </TopText>
           </TopStyle>
-          {this.state.display}
-          <a href='#' onClick={this.handleClick}>...Read More</a>
+          {`${this.state.display}...     `}   
+          <a href='#' onClick={this.handleClick}><b>read more</b></a>
         </Wrapper>
       )
     } else {
@@ -86,7 +87,7 @@ class PreviewEntry extends React.Component {
           <TopStyle>
             <AvatarStyle src={imageURL} />
             <TopText>
-              {review.reviewer_name}
+              <b>{review.reviewer_name}</b>
               <br></br>
               <Date>{date}</Date>
             </TopText>
