@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-//Styles import
+//Styling imports
 import { TopStyle, AvatarStyle, TopText, Date } from './styles/generalUse.style';
 import {EntryWrapper, ShiftedWrapper} from './styles/staticStyles.style';
 

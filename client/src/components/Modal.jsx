@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-// styling imports
+// Styling imports
 import { ModalWrapper, ExitButton, ReviewsWrapper } from './styles/staticStyles.style';
 import { ModalDisplay } from './styles/propStyles.style';
 import { GoX } from 'react-icons/go';

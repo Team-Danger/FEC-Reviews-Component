@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-// Modal 
+// Modal
 const ModalDisplay = styled.div`
   background: rgba(0, 0, 0, 0.6);  
   display: ${(props) => (props.modalOpen ? 'block' : 'none')};
@@ -10,16 +10,16 @@ const ModalDisplay = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-`
+`;
 // Bar
 const Bar = styled.div`
-  margin-top: ${props => props.margin ? props.margin : 0};
-  width: ${props => props.width};
-  height: ${props => props.height};
+  margin-top: ${(props) => (props.margin ? props.margin : 0)};
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
   float: left;
   border-radius: 15%;
-  background-color: ${props => props.color};
+  background-color: ${(props) => props.color};
   margin-right: 5px;
-`
+`;
 
-export { Bar, ModalDisplay, };
+export { Bar, ModalDisplay };

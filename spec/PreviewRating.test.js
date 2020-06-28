@@ -8,7 +8,6 @@ import mockData from '../__mocks__/mockData';
 import PreviewRating from '../client/src/components/PreviewRating';
 
 describe('Preview Rating Components', () => {
-
   const { reviews, ...rest } = mockData;
   it('should render', () => {
     const component = <PreviewRating overview={rest} />;

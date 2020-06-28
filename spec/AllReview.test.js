@@ -10,17 +10,17 @@ import AllReviews from '../client/src/components/AllReviews';
 
 describe('ReviewsSummary component', () => {
   const { reviews, ...rest } = mockData;
-  const { userDp, userName } = rest
-  
+  const { userDp, userName } = rest;
+
   it('should render', () => {
-    const component = <AllReviews reviews={reviews} userDp={userDp} userName={userName}/>;
+    const component = <AllReviews reviews={reviews} userDp={userDp} userName={userName} />;
 
     const tree = renderer.create(component).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it('should render Reviews Entry component', () => {
-    const wrapper = mount(<AllReviews reviews={reviews} userDp={userDp} userName={userName}/>);
+    const wrapper = mount(<AllReviews reviews={reviews} userDp={userDp} userName={userName} />);
 
     expect(wrapper.exists('ReviewEntry')).toBe(true);
   });

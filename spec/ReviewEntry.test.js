@@ -20,13 +20,11 @@ describe('Review Entry Component', () => {
     dp: '5',
     date: '2014-06-18T15:22:37.736Z',
     body: 'here is some text',
-    respond: 'this is a response'
+    respond: 'this is a response',
   };
 
-  
-
   it('should render', () => {
-    const component = <ReviewEntry review={reviewOne} userName='Josh' userDp='1'/>;
+    const component = <ReviewEntry review={reviewOne} userName="Josh" userDp="1" />;
 
     const tree = renderer.create(component).toJSON();
     expect(tree).toMatchSnapshot();
@@ -43,5 +41,4 @@ describe('Review Entry Component', () => {
     expect(wrapperTwo.find('#listerDp').exists()).toBeTruthy();
     expect(wrapperTwo.find('#reviewDp').exists()).toBeTruthy();
   });
-
 });

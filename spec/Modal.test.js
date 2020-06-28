@@ -12,18 +12,16 @@ import mockData from '../__mocks__/mockData';
 
 describe('Modal component', () => {
   const { reviews, ...rest } = mockData;
-  const mockState = { modalOpen: true }
-  const mockFunction = jest.fn();
 
   it('should render', () => {
-    const component = <Modal overview={rest} reviews={reviews} modalOpen={mockState} toggleModal={mockFunction}/>;
+    const component = <Modal overview={rest} reviews={reviews} modalOpen />;
 
     const tree = renderer.create(component).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it('should render Rating, AllReviews Components', () => {
-    const wrapper = mount(<Modal overview={rest} reviews={reviews} modalOpen={mockState} toggleModal={mockFunction}/>);
+    const wrapper = mount(<Modal overview={rest} reviews={reviews} modalOpen />);
 
     expect(wrapper.exists('Rating')).toBe(true);
     expect(wrapper.exists('AllReviews')).toBe(true);

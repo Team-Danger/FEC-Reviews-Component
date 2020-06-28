@@ -16,7 +16,7 @@ app.get('/api/:id', (req, res) => {
     })
     .catch((err) => {
       res.sendStatus(500);
-      error(err)
+      error(err);
     });
 });
 

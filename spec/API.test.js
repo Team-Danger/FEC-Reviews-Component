@@ -22,5 +22,4 @@ describe('API tests', () => {
       });
     done();
   }, 90000);
-
 });
