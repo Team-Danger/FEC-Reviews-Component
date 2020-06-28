@@ -10,6 +10,7 @@ exports[`ReviewsSummary component should render 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .c3 {
@@ -19,6 +20,7 @@ exports[`ReviewsSummary component should render 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .c4 {

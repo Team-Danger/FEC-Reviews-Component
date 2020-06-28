@@ -4,15 +4,16 @@ import styled from 'styled-components';
 const RatingPreviewContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, auto);
+  margin-right: 50px;
 `
 
 const CategoryContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-right: 50px;
   margin-left: 50px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 15px;
 `
 
 const Bar = styled.div`
@@ -57,12 +58,12 @@ const PreviewRating = ({ overview }) => {
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
             <Bar width={`${cleanPercent}%`} color='black' height='100%'/> 
           </Bar>
-          <Rating>{commAvg}</Rating>
+          <Rating>{cleanAvg}</Rating>
         </RatingContainer>
       </CategoryContainer>
 
       <CategoryContainer>
-        <TextContainer>Accuracy</TextContainer>
+        <TextContainer padding={50}>Accuracy</TextContainer>
         <RatingContainer>
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
             <Bar width={`${accuracyPercent}%`} color='black' height='100%'/>
@@ -82,7 +83,7 @@ const PreviewRating = ({ overview }) => {
       </CategoryContainer>
 
       <CategoryContainer>
-        <TextContainer>Location</TextContainer>
+        <TextContainer padding={50}>Location</TextContainer>
         <RatingContainer>
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
             <Bar width={`${locationPercent}%`} color='black' height='100%'/>
@@ -102,7 +103,7 @@ const PreviewRating = ({ overview }) => {
       </CategoryContainer>
 
       <CategoryContainer>
-        <TextContainer>Communication</TextContainer>
+        <TextContainer padding={50}>Value</TextContainer>
         <RatingContainer>
           <Bar width='33%' color='#B3B3B3' height='0.5em'>
             <Bar width={`${valuePercent}%`} color='black' height='100%'/>

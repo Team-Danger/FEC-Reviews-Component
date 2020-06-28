@@ -4,6 +4,8 @@ exports[`App component should render 1`] = `
 .c1 {
   font-size: 1.5em;
   font-weight: bolder;
+  margin-left: 50px;
+  margin-bottom: 15px;
 }
 
 .c9 {
@@ -14,6 +16,7 @@ exports[`App component should render 1`] = `
 .c2 {
   display: grid;
   grid-template-columns: repeat(2,auto);
+  margin-right: 50px;
 }
 
 .c3 {
@@ -26,9 +29,9 @@ exports[`App component should render 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-right: 50px;
   margin-left: 50px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 15px;
 }
 
 .c6 {
@@ -51,9 +54,9 @@ exports[`App component should render 1`] = `
 
 .c4 {
   width: 25%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c8 {
@@ -77,10 +80,33 @@ exports[`App component should render 1`] = `
 
 .c0 {
   font-family: sans-serif display:flex;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 50px;
+  border-top: 1px solid #B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+}
+
+.c10 {
+  font-size: 1em;
+  margin-left: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1em 1em;
+  background-color: white;
+  cursor: pointer;
+}
+
+.c10:hover {
+  background-color: #B3B3B3;
 }
 
 <div
   className="c0"
+  onClick={[Function]}
 >
   <div
     className="c1"
@@ -242,7 +268,7 @@ exports[`App component should render 1`] = `
       <div
         className="c4"
       >
-        Communication
+        Value
       </div>
       <div
         className="c5"
@@ -269,5 +295,12 @@ exports[`App component should render 1`] = `
   <div
     className="c9"
   />
+  <button
+    className="c10"
+    onClick={[Function]}
+  >
+     Show all 
+     reviews
+  </button>
 </div>
 `;

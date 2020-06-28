@@ -12,7 +12,7 @@ import PreviewRating from '../client/src/components/PreviewRating';
 describe('Preview Rating Components', () => {
   const stats = {
     cleanAvg,
-    commAge: commAvg,
+    commAvg,
     accuracyAvg,
     valueAvg,
     locationAvg,

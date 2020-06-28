@@ -3,25 +3,38 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-enzyme';
 import 'jest-styled-components';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 
 import 'babel-polyfill';
 
 import Modal from '../client/src/components/Modal';
+import mockData from '../__mocks__/mockData';
 
 describe('Modal component', () => {
+  const { reviews, ...rest } = mockData;
+  const mockState = { modalOpen: true }
+  const mockFunction = jest.fn();
 
   it('should render', () => {
-    const component = <Modal />;
+    const component = <Modal overview={rest} reviews={reviews} modalOpen={mockState} toggleModal={mockFunction}/>;
 
     const tree = renderer.create(component).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it('should render Rating and AllReviewsComponent ', () => {
-    const wrapper = mount(<Modal listing={listing} />);
+  it('should render Rating, AllReviews Components', () => {
+    const wrapper = mount(<Modal overview={rest} reviews={reviews} modalOpen={mockState} toggleModal={mockFunction}/>);
 
     expect(wrapper.exists('Rating')).toBe(true);
     expect(wrapper.exists('AllReviews')).toBe(true);
   });
+
+  it('should toggle the modal display off when x is clicked', () => {
+    const wrapper = mount(<Modal overview={rest} reviews={reviews} modalOpen={mockState} toggleModal={mockFunction}/>);
+    expect(mockFunction).not.toHaveBeenCalled();
+
+    wrapper.find('button').simulate('click')
+
+    expect(mockFunction).toHaveBeenCalled();
+  })
 });

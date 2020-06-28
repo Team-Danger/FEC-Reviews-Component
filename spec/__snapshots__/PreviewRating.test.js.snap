@@ -4,6 +4,7 @@ exports[`Preview Rating Components should render 1`] = `
 .c0 {
   display: grid;
   grid-template-columns: repeat(2,auto);
+  margin-right: 50px;
 }
 
 .c1 {
@@ -16,9 +17,9 @@ exports[`Preview Rating Components should render 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-right: 50px;
   margin-left: 50px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 15px;
 }
 
 .c4 {
@@ -49,7 +50,7 @@ exports[`Preview Rating Components should render 1`] = `
 }
 
 .c8 {
-  width: NaN%;
+  width: 52%;
   height: 100%;
   float: left;
   border-radius: 15%;
@@ -86,9 +87,9 @@ exports[`Preview Rating Components should render 1`] = `
 
 .c2 {
   width: 25%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c6 {
@@ -139,7 +140,9 @@ exports[`Preview Rating Components should render 1`] = `
       </div>
       <span
         className="c6"
-      />
+      >
+        1
+      </span>
     </div>
   </div>
   <div
@@ -194,12 +197,14 @@ exports[`Preview Rating Components should render 1`] = `
           className="c8"
           color="black"
           height="100%"
-          width="NaN%"
+          width="52%"
         />
       </div>
       <span
         className="c6"
-      />
+      >
+        2.6
+      </span>
     </div>
   </div>
   <div
@@ -270,7 +275,7 @@ exports[`Preview Rating Components should render 1`] = `
     <div
       className="c2"
     >
-      Communication
+      Value
     </div>
     <div
       className="c3"

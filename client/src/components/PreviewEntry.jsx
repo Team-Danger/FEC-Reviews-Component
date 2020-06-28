@@ -7,12 +7,14 @@ const Wrapper = styled.div`
 `
 const TopStyle = styled.div`
   display: flex;
+  margin-bottom: 10px;
 `
 const AvatarStyle = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 50%;
   flex-direction: column;
+  margin-right: 10px;
 `
 const TopText = styled.div`
   flex-direction: row

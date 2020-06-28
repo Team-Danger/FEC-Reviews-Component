@@ -1,0 +1,708 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component should render 1`] = `
+.c17 {
+  margin: 25px 50px 25px 50px;
+}
+
+.c22 {
+  margin: 25px 50px 25px 50px;
+  padding-left: 30px;
+}
+
+.c18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.c19 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.c20 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c21 {
+  color: #B3B3B3;
+}
+
+.c16 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  overflow-y: auto;
+}
+
+.c3 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 50px;
+  padding-left: 20px;
+}
+
+.c4 {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.c5 {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  width: 25%;
+}
+
+.c10 {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.c7 {
+  height: 100%;
+  width: 75%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c8 {
+  width: 33%;
+  height: 0.5em;
+  float: left;
+  border-radius: 15%;
+  background-color: #B3B3B3;
+  margin-right: 5px;
+}
+
+.c9 {
+  width: 20%;
+  height: 100%;
+  float: left;
+  border-radius: 15%;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.c11 {
+  width: 24%;
+  height: 100%;
+  float: left;
+  border-radius: 15%;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.c12 {
+  width: 52%;
+  height: 100%;
+  float: left;
+  border-radius: 15%;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.c13 {
+  width: 80%;
+  height: 100%;
+  float: left;
+  border-radius: 15%;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.c14 {
+  width: 38%;
+  height: 100%;
+  float: left;
+  border-radius: 15%;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.c15 {
+  width: 32%;
+  height: 100%;
+  float: left;
+  border-radius: 15%;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.c0 {
+  width: 1000px;
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: white;
+  border: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.c1:hover {
+  background-color: #B3B3B3;
+  cursor: pointer;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  max-height: calc(100vh - 210px);
+}
+
+<div
+  className="c0"
+  onClick={[Function]}
+>
+  <button
+    className="c1"
+    onClick={[MockFunction]}
+  >
+    X
+  </button>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        2.05
+         (
+        7
+         reviews)
+      </div>
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          Cleaniness
+        </span>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+            color="#B3B3B3"
+            height="0.5em"
+            width="33%"
+          >
+            <div
+              className="c9"
+              color="black"
+              height="100%"
+              width="20%"
+            />
+          </div>
+          <span
+            className="c10"
+          >
+            1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          Accuracy
+        </span>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+            color="#B3B3B3"
+            height="0.5em"
+            width="33%"
+          >
+            <div
+              className="c11"
+              color="black"
+              height="100%"
+              width="24%"
+            />
+          </div>
+          <span
+            className="c10"
+          >
+            1.2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          Communication
+        </span>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+            color="#B3B3B3"
+            height="0.5em"
+            width="33%"
+          >
+            <div
+              className="c12"
+              color="black"
+              height="100%"
+              width="52%"
+            />
+          </div>
+          <span
+            className="c10"
+          >
+            2.6
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          Location
+        </span>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+            color="#B3B3B3"
+            height="0.5em"
+            width="33%"
+          >
+            <div
+              className="c13"
+              color="black"
+              height="100%"
+              width="80%"
+            />
+          </div>
+          <span
+            className="c10"
+          >
+            4
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          Check-in
+        </span>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+            color="#B3B3B3"
+            height="0.5em"
+            width="33%"
+          >
+            <div
+              className="c14"
+              color="black"
+              height="100%"
+              width="38%"
+            />
+          </div>
+          <span
+            className="c10"
+          >
+            1.9
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5"
+      >
+        <span
+          className="c6"
+        >
+          Value
+        </span>
+        <div
+          className="c7"
+        >
+          <div
+            className="c8"
+            color="#B3B3B3"
+            height="0.5em"
+            width="33%"
+          >
+            <div
+              className="c15"
+              color="black"
+              height="100%"
+              width="32%"
+            />
+          </div>
+          <span
+            className="c10"
+          >
+            1.6
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c16"
+    >
+      <div>
+        <div>
+          <div
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug25.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Clifton
+                <br />
+                <span
+                  className="c21"
+                >
+                  April 2015
+                </span>
+              </div>
+            </div>
+            Cillum magna cupidatat id veniam eiusmod et fugiat duis labore ipsum adipisicing cillum. Commodo consectetur et amet ipsum et anim aute commodo. Quis aliquip nisi ad ex. Tempor elit esse in reprehenderit eu proident nisi qui aute anim anim dolor dolore.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug9.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Alvis
+                <br />
+                <span
+                  className="c21"
+                >
+                  April 2016
+                </span>
+              </div>
+            </div>
+            Tempor do laborum excepteur exercitation ipsum sunt non duis ad culpa minim nisi elit esse laboris. Non in pariatur cupidatat elit. Ullamco ad ut tempor excepteur reprehenderit enim proident sit officia esse mollit. Incididunt labore sunt consectetur qui aliqua sunt amet non eu excepteur aute sunt minim esse laborum. Qui excepteur proident pariatur consectetur velit. Ut nisi voluptate id nisi aliquip ad.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug10.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Samir
+                <br />
+                <span
+                  className="c21"
+                >
+                  September 2016
+                </span>
+              </div>
+            </div>
+            Cupidatat voluptate aliqua veniam ullamco ut officia et velit dolor.
+          </div>
+          <div
+            className="c22"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Response from 
+                Herbert
+                <br />
+                <span
+                  className="c21"
+                >
+                  September 2016
+                </span>
+              </div>
+            </div>
+            Aliqua laborum sint enim occaecat adipisicing magna laboris non tempor consectetur incididunt. Duis culpa quis do nisi eiusmod irure id aute voluptate laborum nisi eiusmod est culpa.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug20.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Ismael
+                <br />
+                <span
+                  className="c21"
+                >
+                  August 2017
+                </span>
+              </div>
+            </div>
+            Est ut anim ipsum enim mollit excepteur sit. Sunt irure esse adipisicing tempor exercitation eu ex dolore sunt do officia pariatur. Dolor enim incididunt aute consectetur nisi ullamco quis. Eiusmod eiusmod velit excepteur non ut pariatur. Non deserunt aliqua do elit reprehenderit consectetur nisi est voluptate. Elit voluptate magna dolor qui ut amet fugiat nostrud deserunt anim Lorem aliqua cupidatat. Consequat in cupidatat dolor sunt culpa non esse id cillum laborum ut minim Lorem nostrud labore.
+          </div>
+          <div
+            className="c22"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Response from 
+                Herbert
+                <br />
+                <span
+                  className="c21"
+                >
+                  August 2017
+                </span>
+              </div>
+            </div>
+            Eu tempor commodo ut nisi nulla ad ex. Aliquip nostrud minim cillum consequat. Duis aliquip aliquip proident non cillum deserunt laboris sit incididunt. Ea labore exercitation occaecat ipsum id nulla ipsum eu nostrud deserunt. Ut commodo velit cupidatat et nisi mollit aliqua adipisicing amet exercitation cillum nostrud ut. Ut Lorem culpa minim quis et. Excepteur veniam laboris sit mollit consequat sint ad. Magna dolor dolor ullamco officia ex duis aliquip aute ullamco quis.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug16.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Kolby
+                <br />
+                <span
+                  className="c21"
+                >
+                  May 2018
+                </span>
+              </div>
+            </div>
+            Anim minim qui culpa anim. Esse exercitation sit sint tempor aliqua proident. Ullamco duis tempor cupidatat sunt quis labore mollit tempor. Ea enim aliquip Lorem do aliquip exercitation et dolor cupidatat. Qui ipsum mollit sit deserunt ipsum consectetur commodo duis excepteur labore qui.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug15.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Avery
+                <br />
+                <span
+                  className="c21"
+                >
+                  February 2019
+                </span>
+              </div>
+            </div>
+            Lorem laborum est ullamco. Minim dolor incididunt magna velit aute officia. Sunt fugiat elit non laborum in incididunt duis excepteur laboris tempor.
+          </div>
+          <div
+            className="c22"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Response from 
+                Herbert
+                <br />
+                <span
+                  className="c21"
+                >
+                  February 2019
+                </span>
+              </div>
+            </div>
+            Nulla irure et Lorem eiusmod fugiat commodo commodo fugiat labore officia. Magna dolore eiusmod tempor velit enim laboris cillum adipisicing. In consectetur consequat reprehenderit veniam mollit labore dolor. Labore aute exercitation aliqua tempor laborum culpa culpa laborum irure eu aute non excepteur reprehenderit incididunt. Ex mollit occaecat qui. Magna aliquip ipsum ea exercitation consequat nulla exercitation reprehenderit. Incididunt minim amet reprehenderit sunt cillum voluptate velit minim. Ex sunt ad sit cillum nisi laborum aliqua ex eu.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug29.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Tremaine
+                <br />
+                <span
+                  className="c21"
+                >
+                  June 2019
+                </span>
+              </div>
+            </div>
+            Consequat adipisicing veniam non laboris nisi laborum aliquip elit. Anim magna ad esse quis consectetur velit irure est irure adipisicing id aliquip commodo. Nostrud consequat laboris cillum tempor cupidatat culpa enim officia. Do commodo elit quis. Reprehenderit consequat consequat cillum excepteur do sunt.
+          </div>
+          <div
+            className="c22"
+          >
+            <div
+              className="c18"
+            >
+              <img
+                className="c19"
+                src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+              />
+              <div
+                className="c20"
+              >
+                Response from 
+                Herbert
+                <br />
+                <span
+                  className="c21"
+                >
+                  June 2019
+                </span>
+              </div>
+            </div>
+            Laboris aliqua anim ex laboris est ad amet ex nisi aliquip cillum enim. Est excepteur ipsum eiusmod ipsum aliqua anim id enim ex dolore ut. Mollit labore et nisi cillum tempor nulla. Eiusmod cupidatat veniam sunt. Aliqua nisi anim et commodo cillum aute tempor magna reprehenderit qui deserunt. Ipsum officia fugiat est et quis do esse ullamco qui deserunt veniam minim amet quis dolor. Amet exercitation deserunt dolor in veniam minim labore ut consectetur. Deserunt voluptate adipisicing commodo duis fugiat adipisicing cupidatat culpa irure excepteur in velit.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

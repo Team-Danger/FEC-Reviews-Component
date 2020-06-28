@@ -46,7 +46,7 @@ const generateReviews = (size) => {
 
     reviews.push(reviewObj);
   }
-  return reviews.sort((a, b) => (a.date > b.date));
+  return reviews.sort((a, b) => (a.date < b.date));
 };
 
 // Math.floor(Math.random() * (max - min + 1) + min)

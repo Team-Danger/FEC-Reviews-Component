@@ -12,12 +12,14 @@ const ShiftedWrapper = styled(Wrapper)`
 
 const TopStyle = styled.div`
   display: flex;
+  margin-bottom: 10px;
 `
 const AvatarStyle = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 50%;
   flex-direction: column;
+  margin-right: 10px;
 `
 const TopText = styled.div`
   flex-direction: row
@@ -29,7 +31,6 @@ const Date = styled.span`
 
 const ReviewEntry = (props) => {
   const { review, userDp, userName } = props;
-  console.log(review);
   const reviewerURL = `https://dteamdp.s3-us-west-2.amazonaws.com/pug${review.dp}.jpg`
   const date = moment(review.date).format('MMMM YYYY');
 

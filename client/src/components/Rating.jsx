@@ -5,6 +5,7 @@ const RatingWrapper = styled.div`
   flex-direction: column;
   width: 50%;
   margin-right: 50px;
+  padding-left: 20px
 `
 
 const OverviewWrapper = styled.div`
