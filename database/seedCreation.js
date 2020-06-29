@@ -1,17 +1,4 @@
-const { LoremIpsum } = require('lorem-ipsum');
 const { name, lorem } = require('faker');
-
-// set up lorem ipsum params
-// const lorem = new LoremIpsum({
-//   sentencesPerParagraph: {
-//     max: 8,
-//     min: 1,
-//   },
-//   wordsPerSentence: {
-//     max: 16,
-//     min: 4,
-//   },
-// });
 
 // ===== HELPER FUNCTIONS =====
 const pad3 = (numString) => {
@@ -48,8 +35,6 @@ const generateReviews = (size) => {
   }
   return reviews.sort((a, b) => (a.date < b.date));
 };
-
-// Math.floor(Math.random() * (max - min + 1) + min)
 
 // ====== ENTRY CREATION FUNCTION =====
 const seedEntry = (seed) => {
