@@ -55,7 +55,7 @@ class PreviewEntry extends React.Component {
             <AvatarStyle src={imageURL} />
             <TopText>
               <b>{review.reviewer_name}</b>
-              <br></br>
+              <br />
               <Date>{date}</Date>
             </TopText>
           </TopStyle>
@@ -70,7 +70,7 @@ class PreviewEntry extends React.Component {
             <AvatarStyle src={imageURL} />
             <TopText>
               <b>{review.reviewer_name}</b>
-              <br></br>
+              <br />
               <Date>{date}</Date>
             </TopText>
           </TopStyle>

@@ -14,11 +14,11 @@ const ModalDisplay = styled.div`
 // Bar
 const Bar = styled.div`
   margin-top: ${(props) => (props.margin ? props.margin : 0)};
-  width: ${(props) => props.width};
-  height: ${(props) => props.height};
+  width: ${(props) => props.width ? props.width : '33%'};
+  height: ${(props) => props.height ? props.height : '0.25em'};
   float: left;
   border-radius: 15%;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.color ? props.color : '#B3B3B3'};
   margin-right: 5px;
 `;
 

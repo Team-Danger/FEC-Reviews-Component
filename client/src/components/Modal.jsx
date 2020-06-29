@@ -8,7 +8,7 @@ import { GoX } from 'react-icons/go';
 
 // component imports
 import AllReviews from './AllReviews.jsx';
-import Rating from './Rating.jsx'
+import { Rating } from './Rating.jsx'
 
 const Modal = (props) => {
   const { overview, reviews, modalOpen } = props;

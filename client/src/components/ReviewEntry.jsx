@@ -20,7 +20,7 @@ const ReviewEntry = (props) => {
             <AvatarStyle src={reviewerURL} id='reviewDp'/>
             <TopText>
               <b>{review.reviewer_name}</b>
-              <br></br>
+              <br />
               <Date>{date}</Date>
             </TopText>
           </TopStyle>
@@ -32,7 +32,7 @@ const ReviewEntry = (props) => {
             <AvatarStyle src={listerURL} id='listerDp'/>
             <TopText>
               <b>Response from {userName}</b>
-              <br></br>
+              <br />
               <Date>{date}</Date>
             </TopText>
           </TopStyle>
@@ -47,7 +47,7 @@ const ReviewEntry = (props) => {
           <AvatarStyle src={reviewerURL} id='reviewDp'/>
           <TopText>
             <b>{review.reviewer_name}</b>
-            <br></br>
+            <br />
             <Date>{date}</Date>
           </TopText>
         </TopStyle>
