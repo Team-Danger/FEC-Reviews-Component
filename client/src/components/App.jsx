@@ -11,7 +11,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`/api/${this.props.listing}`)
+    axios.get(`/api/reviews/${this.props.listing}`)
       .then(({data}) => {
         this.setState({data});
       })

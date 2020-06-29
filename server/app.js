@@ -5,7 +5,7 @@ const Reviews = require('../database/schema.js');
 
 const app = express();
 
-app.get('/api/:id', (req, res) => {
+app.get('/api/reviews/:id', (req, res) => {
   Reviews.findOne({ paddedId: req.params.id })
     .then((listing) => {
       if (listing) {
