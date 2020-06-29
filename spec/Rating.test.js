@@ -5,7 +5,7 @@ import 'jest-enzyme';
 import 'jest-styled-components';
 
 import mockData from '../__mocks__/mockData';
-import Rating from '../client/src/components/PreviewRating';
+import { Rating } from '../client/src/components/Rating';
 
 describe('Preview Rating Components', () => {
   const { reviews, ...rest } = mockData;

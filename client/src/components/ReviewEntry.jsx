@@ -3,7 +3,7 @@ import moment from 'moment';
 
 //Styling imports
 import { TopStyle, AvatarStyle, TopText, Date } from './styles/generalUse.style';
-import {EntryWrapper, ShiftedWrapper} from './styles/staticStyles.style';
+import { EntryWrapper, ShiftedWrapper } from './styles/staticStyles.style';
 
 const ReviewEntry = (props) => {
   const { review, userDp, userName } = props;

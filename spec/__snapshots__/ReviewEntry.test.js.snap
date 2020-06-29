@@ -31,6 +31,7 @@ exports[`Review Entry Component should render 1`] = `
 
 .c0 {
   margin: 25px 50px 25px 50px;
+  padding-bottom: 30px;
 }
 
 <div
@@ -47,7 +48,9 @@ exports[`Review Entry Component should render 1`] = `
     <div
       className="c3"
     >
-      Michael
+      <b>
+        Michael
+      </b>
       <br />
       <span
         className="c4"

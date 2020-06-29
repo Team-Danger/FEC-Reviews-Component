@@ -2,27 +2,41 @@
 
 exports[`Preview Rating Components should render 1`] = `
 .c0 {
-  display: grid;
-  grid-template-columns: repeat(2,auto);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-right: 50px;
+  padding-left: 20px;
+  width: 35%;
 }
 
 .c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 15px;
-  width: 100%;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.c2 {
+  margin-left: 10px;
 }
 
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32,33 +46,32 @@ exports[`Preview Rating Components should render 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-right: 10px;
   width: 75%;
 }
 
-.c2 {
+.c4 {
   width: 25%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c6 {
-  font-size: 15px;
+.c8 {
+  font-size: 13px;
   font-weight: bolder;
 }
 
-.c4 {
+.c6 {
   margin-top: 5px;
   width: 33%;
-  height: 0.5em;
+  height: 0.25em;
   float: left;
   border-radius: 15%;
   background-color: #B3B3B3;
   margin-right: 5px;
 }
 
-.c5 {
+.c7 {
   margin-top: 0;
   width: 20%;
   height: 100%;
@@ -68,7 +81,7 @@ exports[`Preview Rating Components should render 1`] = `
   margin-right: 5px;
 }
 
-.c7 {
+.c9 {
   margin-top: 0;
   width: 24%;
   height: 100%;
@@ -78,7 +91,7 @@ exports[`Preview Rating Components should render 1`] = `
   margin-right: 5px;
 }
 
-.c8 {
+.c10 {
   margin-top: 0;
   width: 52%;
   height: 100%;
@@ -88,7 +101,7 @@ exports[`Preview Rating Components should render 1`] = `
   margin-right: 5px;
 }
 
-.c9 {
+.c11 {
   margin-top: 0;
   width: 80%;
   height: 100%;
@@ -98,7 +111,7 @@ exports[`Preview Rating Components should render 1`] = `
   margin-right: 5px;
 }
 
-.c10 {
+.c12 {
   margin-top: 0;
   width: 38%;
   height: 100%;
@@ -108,7 +121,7 @@ exports[`Preview Rating Components should render 1`] = `
   margin-right: 5px;
 }
 
-.c11 {
+.c13 {
   margin-top: 0;
   width: 32%;
   height: 100%;
@@ -124,184 +137,198 @@ exports[`Preview Rating Components should render 1`] = `
   <div
     className="c1"
   >
-    <div
+    <svg
+      color="#FF585D"
+      fill="currentColor"
+      height="1em"
+      size="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": "#FF585D",
+        }
+      }
+      viewBox="0 0 576 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+      />
+    </svg>
+    <span
       className="c2"
     >
-      Cleanliness
+      2.05
+       (
+      7
+       reviews)
+    </span>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+    >
+      Cleaniness
     </div>
     <div
-      className="c3"
+      className="c5"
     >
       <div
-        className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
+        className="c6"
       >
         <div
-          className="c5"
+          className="c7"
           color="black"
           height="100%"
           width="20%"
         />
       </div>
       <span
-        className="c6"
+        className="c8"
       >
         1
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="c3"
   >
     <div
-      className="c2"
+      className="c4"
     >
       Accuracy
     </div>
     <div
-      className="c3"
+      className="c5"
     >
       <div
-        className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
+        className="c6"
       >
         <div
-          className="c7"
+          className="c9"
           color="black"
           height="100%"
           width="24%"
         />
       </div>
       <span
-        className="c6"
+        className="c8"
       >
         1.2
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="c3"
   >
     <div
-      className="c2"
+      className="c4"
     >
       Communication
     </div>
     <div
-      className="c3"
+      className="c5"
     >
       <div
-        className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c10"
           color="black"
           height="100%"
           width="52%"
         />
       </div>
       <span
-        className="c6"
+        className="c8"
       >
         2.6
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="c3"
   >
     <div
-      className="c2"
+      className="c4"
     >
       Location
     </div>
     <div
-      className="c3"
+      className="c5"
     >
       <div
-        className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
+        className="c6"
       >
         <div
-          className="c9"
+          className="c11"
           color="black"
           height="100%"
           width="80%"
         />
       </div>
       <span
-        className="c6"
+        className="c8"
       >
         4
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="c3"
   >
     <div
-      className="c2"
+      className="c4"
     >
       Check-in
     </div>
     <div
-      className="c3"
+      className="c5"
     >
       <div
-        className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
+        className="c6"
       >
         <div
-          className="c10"
+          className="c12"
           color="black"
           height="100%"
           width="38%"
         />
       </div>
       <span
-        className="c6"
+        className="c8"
       >
         1.9
       </span>
     </div>
   </div>
   <div
-    className="c1"
+    className="c3"
   >
     <div
-      className="c2"
+      className="c4"
     >
       Value
     </div>
     <div
-      className="c3"
+      className="c5"
     >
       <div
-        className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
+        className="c6"
       >
         <div
-          className="c11"
+          className="c13"
           color="black"
           height="100%"
           width="32%"
         />
       </div>
       <span
-        className="c6"
+        className="c8"
       >
         1.6
       </span>

@@ -44,14 +44,14 @@ exports[`Preview Rating Components should render 1`] = `
 }
 
 .c6 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bolder;
 }
 
 .c4 {
   margin-top: 5px;
   width: 33%;
-  height: 0.5em;
+  height: 0.25em;
   float: left;
   border-radius: 15%;
   background-color: #B3B3B3;
@@ -127,16 +127,13 @@ exports[`Preview Rating Components should render 1`] = `
     <div
       className="c2"
     >
-      Cleanliness
+      Cleaniness
     </div>
     <div
       className="c3"
     >
       <div
         className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
       >
         <div
           className="c5"
@@ -165,9 +162,6 @@ exports[`Preview Rating Components should render 1`] = `
     >
       <div
         className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
       >
         <div
           className="c7"
@@ -196,9 +190,6 @@ exports[`Preview Rating Components should render 1`] = `
     >
       <div
         className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
       >
         <div
           className="c8"
@@ -227,9 +218,6 @@ exports[`Preview Rating Components should render 1`] = `
     >
       <div
         className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
       >
         <div
           className="c9"
@@ -258,9 +246,6 @@ exports[`Preview Rating Components should render 1`] = `
     >
       <div
         className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
       >
         <div
           className="c10"
@@ -289,9 +274,6 @@ exports[`Preview Rating Components should render 1`] = `
     >
       <div
         className="c4"
-        color="#B3B3B3"
-        height="0.5em"
-        width="33%"
       >
         <div
           className="c11"

@@ -34,15 +34,17 @@ exports[`ReviewsSummary component should render 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   overflow-y: auto;
-  width: 50%;
+  width: 65%;
 }
 
 .c1 {
   margin: 25px 50px 25px 50px;
+  padding-bottom: 30px;
 }
 
 .c6 {
   margin: 25px 50px 25px 50px;
+  padding-bottom: 30px;
   padding-left: 30px;
 }
 
@@ -64,7 +66,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Clifton
+          <b>
+            Clifton
+          </b>
           <br />
           <span
             className="c5"
@@ -91,7 +95,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Alvis
+          <b>
+            Alvis
+          </b>
           <br />
           <span
             className="c5"
@@ -119,7 +125,9 @@ exports[`ReviewsSummary component should render 1`] = `
           <div
             className="c4"
           >
-            Samir
+            <b>
+              Samir
+            </b>
             <br />
             <span
               className="c5"
@@ -144,8 +152,10 @@ exports[`ReviewsSummary component should render 1`] = `
           <div
             className="c4"
           >
-            Response from 
-            Herbert
+            <b>
+              Response from 
+              Herbert
+            </b>
             <br />
             <span
               className="c5"
@@ -174,7 +184,9 @@ exports[`ReviewsSummary component should render 1`] = `
           <div
             className="c4"
           >
-            Ismael
+            <b>
+              Ismael
+            </b>
             <br />
             <span
               className="c5"
@@ -199,8 +211,10 @@ exports[`ReviewsSummary component should render 1`] = `
           <div
             className="c4"
           >
-            Response from 
-            Herbert
+            <b>
+              Response from 
+              Herbert
+            </b>
             <br />
             <span
               className="c5"
@@ -228,7 +242,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Kolby
+          <b>
+            Kolby
+          </b>
           <br />
           <span
             className="c5"
@@ -256,7 +272,9 @@ exports[`ReviewsSummary component should render 1`] = `
           <div
             className="c4"
           >
-            Avery
+            <b>
+              Avery
+            </b>
             <br />
             <span
               className="c5"
@@ -281,8 +299,10 @@ exports[`ReviewsSummary component should render 1`] = `
           <div
             className="c4"
           >
-            Response from 
-            Herbert
+            <b>
+              Response from 
+              Herbert
+            </b>
             <br />
             <span
               className="c5"
@@ -311,7 +331,9 @@ exports[`ReviewsSummary component should render 1`] = `
           <div
             className="c4"
           >
-            Tremaine
+            <b>
+              Tremaine
+            </b>
             <br />
             <span
               className="c5"
@@ -336,8 +358,10 @@ exports[`ReviewsSummary component should render 1`] = `
           <div
             className="c4"
           >
-            Response from 
-            Herbert
+            <b>
+              Response from 
+              Herbert
+            </b>
             <br />
             <span
               className="c5"
