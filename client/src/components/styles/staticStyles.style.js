@@ -49,7 +49,7 @@ const ExitButton = styled.button`
 const ReviewsWrapper = styled.div`
   display: flex;
   margin: 20px;
-  max-height: calc(100vh - 210px);
+  max-height: 675px;
 `;
 // PreviewEntry
 const PreviewWrapper = styled.div`
