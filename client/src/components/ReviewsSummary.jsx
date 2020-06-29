@@ -5,7 +5,8 @@ import PreviewEntry from './PreviewEntry.jsx'
 
 const ReviewSummaryStyle = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, auto)
+  grid-template-columns: repeat(2, auto);
+  margin: 0 auto;
 `
 const ReviewsSummary = (props) => {
   const { reviews } = props;

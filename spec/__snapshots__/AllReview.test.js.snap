@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewsSummary component should render 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.c3 {
+  border-radius: 50%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.c4 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c5 {
+  color: #B3B3B3;
+}
+
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 65%;
+}
+
+.c1 {
+  margin: 25px 50px 25px 50px;
+  padding-bottom: 30px;
+}
+
+.c6 {
+  margin: 25px 50px 25px 50px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          id="reviewDp"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug25.jpg"
+        />
+        <div
+          className="c4"
+        >
+          <b>
+            Clifton
+          </b>
+          <br />
+          <span
+            className="c5"
+          >
+            April 2015
+          </span>
+        </div>
+      </div>
+      Cillum magna cupidatat id veniam eiusmod et fugiat duis labore ipsum adipisicing cillum. Commodo consectetur et amet ipsum et anim aute commodo. Quis aliquip nisi ad ex. Tempor elit esse in reprehenderit eu proident nisi qui aute anim anim dolor dolore.
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          id="reviewDp"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug9.jpg"
+        />
+        <div
+          className="c4"
+        >
+          <b>
+            Alvis
+          </b>
+          <br />
+          <span
+            className="c5"
+          >
+            April 2016
+          </span>
+        </div>
+      </div>
+      Tempor do laborum excepteur exercitation ipsum sunt non duis ad culpa minim nisi elit esse laboris. Non in pariatur cupidatat elit. Ullamco ad ut tempor excepteur reprehenderit enim proident sit officia esse mollit. Incididunt labore sunt consectetur qui aliqua sunt amet non eu excepteur aute sunt minim esse laborum. Qui excepteur proident pariatur consectetur velit. Ut nisi voluptate id nisi aliquip ad.
+    </div>
+  </div>
+  <div>
+    <div>
+      <div
+        className="c1"
+      >
+        <div
+          className="c2"
+        >
+          <img
+            className="c3"
+            id="reviewDp"
+            src="https://dteamdp.s3-us-west-2.amazonaws.com/pug10.jpg"
+          />
+          <div
+            className="c4"
+          >
+            <b>
+              Samir
+            </b>
+            <br />
+            <span
+              className="c5"
+            >
+              September 2016
+            </span>
+          </div>
+        </div>
+        Cupidatat voluptate aliqua veniam ullamco ut officia et velit dolor.
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c2"
+        >
+          <img
+            className="c3"
+            id="listerDp"
+            src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+          />
+          <div
+            className="c4"
+          >
+            <b>
+              Response from 
+              Herbert
+            </b>
+            <br />
+            <span
+              className="c5"
+            >
+              September 2016
+            </span>
+          </div>
+        </div>
+        Aliqua laborum sint enim occaecat adipisicing magna laboris non tempor consectetur incididunt. Duis culpa quis do nisi eiusmod irure id aute voluptate laborum nisi eiusmod est culpa.
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div
+        className="c1"
+      >
+        <div
+          className="c2"
+        >
+          <img
+            className="c3"
+            id="reviewDp"
+            src="https://dteamdp.s3-us-west-2.amazonaws.com/pug20.jpg"
+          />
+          <div
+            className="c4"
+          >
+            <b>
+              Ismael
+            </b>
+            <br />
+            <span
+              className="c5"
+            >
+              August 2017
+            </span>
+          </div>
+        </div>
+        Est ut anim ipsum enim mollit excepteur sit. Sunt irure esse adipisicing tempor exercitation eu ex dolore sunt do officia pariatur. Dolor enim incididunt aute consectetur nisi ullamco quis. Eiusmod eiusmod velit excepteur non ut pariatur. Non deserunt aliqua do elit reprehenderit consectetur nisi est voluptate. Elit voluptate magna dolor qui ut amet fugiat nostrud deserunt anim Lorem aliqua cupidatat. Consequat in cupidatat dolor sunt culpa non esse id cillum laborum ut minim Lorem nostrud labore.
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c2"
+        >
+          <img
+            className="c3"
+            id="listerDp"
+            src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+          />
+          <div
+            className="c4"
+          >
+            <b>
+              Response from 
+              Herbert
+            </b>
+            <br />
+            <span
+              className="c5"
+            >
+              August 2017
+            </span>
+          </div>
+        </div>
+        Eu tempor commodo ut nisi nulla ad ex. Aliquip nostrud minim cillum consequat. Duis aliquip aliquip proident non cillum deserunt laboris sit incididunt. Ea labore exercitation occaecat ipsum id nulla ipsum eu nostrud deserunt. Ut commodo velit cupidatat et nisi mollit aliqua adipisicing amet exercitation cillum nostrud ut. Ut Lorem culpa minim quis et. Excepteur veniam laboris sit mollit consequat sint ad. Magna dolor dolor ullamco officia ex duis aliquip aute ullamco quis.
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <img
+          className="c3"
+          id="reviewDp"
+          src="https://dteamdp.s3-us-west-2.amazonaws.com/pug16.jpg"
+        />
+        <div
+          className="c4"
+        >
+          <b>
+            Kolby
+          </b>
+          <br />
+          <span
+            className="c5"
+          >
+            May 2018
+          </span>
+        </div>
+      </div>
+      Anim minim qui culpa anim. Esse exercitation sit sint tempor aliqua proident. Ullamco duis tempor cupidatat sunt quis labore mollit tempor. Ea enim aliquip Lorem do aliquip exercitation et dolor cupidatat. Qui ipsum mollit sit deserunt ipsum consectetur commodo duis excepteur labore qui.
+    </div>
+  </div>
+  <div>
+    <div>
+      <div
+        className="c1"
+      >
+        <div
+          className="c2"
+        >
+          <img
+            className="c3"
+            id="reviewDp"
+            src="https://dteamdp.s3-us-west-2.amazonaws.com/pug15.jpg"
+          />
+          <div
+            className="c4"
+          >
+            <b>
+              Avery
+            </b>
+            <br />
+            <span
+              className="c5"
+            >
+              February 2019
+            </span>
+          </div>
+        </div>
+        Lorem laborum est ullamco. Minim dolor incididunt magna velit aute officia. Sunt fugiat elit non laborum in incididunt duis excepteur laboris tempor.
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c2"
+        >
+          <img
+            className="c3"
+            id="listerDp"
+            src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+          />
+          <div
+            className="c4"
+          >
+            <b>
+              Response from 
+              Herbert
+            </b>
+            <br />
+            <span
+              className="c5"
+            >
+              February 2019
+            </span>
+          </div>
+        </div>
+        Nulla irure et Lorem eiusmod fugiat commodo commodo fugiat labore officia. Magna dolore eiusmod tempor velit enim laboris cillum adipisicing. In consectetur consequat reprehenderit veniam mollit labore dolor. Labore aute exercitation aliqua tempor laborum culpa culpa laborum irure eu aute non excepteur reprehenderit incididunt. Ex mollit occaecat qui. Magna aliquip ipsum ea exercitation consequat nulla exercitation reprehenderit. Incididunt minim amet reprehenderit sunt cillum voluptate velit minim. Ex sunt ad sit cillum nisi laborum aliqua ex eu.
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div
+        className="c1"
+      >
+        <div
+          className="c2"
+        >
+          <img
+            className="c3"
+            id="reviewDp"
+            src="https://dteamdp.s3-us-west-2.amazonaws.com/pug29.jpg"
+          />
+          <div
+            className="c4"
+          >
+            <b>
+              Tremaine
+            </b>
+            <br />
+            <span
+              className="c5"
+            >
+              June 2019
+            </span>
+          </div>
+        </div>
+        Consequat adipisicing veniam non laboris nisi laborum aliquip elit. Anim magna ad esse quis consectetur velit irure est irure adipisicing id aliquip commodo. Nostrud consequat laboris cillum tempor cupidatat culpa enim officia. Do commodo elit quis. Reprehenderit consequat consequat cillum excepteur do sunt.
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c2"
+        >
+          <img
+            className="c3"
+            id="listerDp"
+            src="https://dteamdp.s3-us-west-2.amazonaws.com/pug69.jpg"
+          />
+          <div
+            className="c4"
+          >
+            <b>
+              Response from 
+              Herbert
+            </b>
+            <br />
+            <span
+              className="c5"
+            >
+              June 2019
+            </span>
+          </div>
+        </div>
+        Laboris aliqua anim ex laboris est ad amet ex nisi aliquip cillum enim. Est excepteur ipsum eiusmod ipsum aliqua anim id enim ex dolore ut. Mollit labore et nisi cillum tempor nulla. Eiusmod cupidatat veniam sunt. Aliqua nisi anim et commodo cillum aute tempor magna reprehenderit qui deserunt. Ipsum officia fugiat est et quis do esse ullamco qui deserunt veniam minim amet quis dolor. Amet exercitation deserunt dolor in veniam minim labore ut consectetur. Deserunt voluptate adipisicing commodo duis fugiat adipisicing cupidatat culpa irure excepteur in velit.
+      </div>
+    </div>
+  </div>
+</div>
+`;

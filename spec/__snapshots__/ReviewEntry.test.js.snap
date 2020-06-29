@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Preview Entry Components should render 1`] = `
+exports[`Review Entry Component should render 1`] = `
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -30,7 +30,8 @@ exports[`Preview Entry Components should render 1`] = `
 }
 
 .c0 {
-  margin: 50px 15px 25px 50px;
+  margin: 25px 50px 25px 50px;
+  padding-bottom: 30px;
 }
 
 <div
@@ -41,30 +42,23 @@ exports[`Preview Entry Components should render 1`] = `
   >
     <img
       className="c2"
+      id="reviewDp"
       src="https://dteamdp.s3-us-west-2.amazonaws.com/pug11.jpg"
     />
     <div
       className="c3"
     >
       <b>
-        Maureen
+        Michael
       </b>
       <br />
       <span
         className="c4"
       >
-        September 2014
+        July 2016
       </span>
     </div>
   </div>
-  111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111...     
-  <a
-    href="#"
-    onClick={[Function]}
-  >
-    <b>
-      read more
-    </b>
-  </a>
+  here is some text
 </div>
 `;

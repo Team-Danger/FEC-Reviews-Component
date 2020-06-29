@@ -1,17 +1,4 @@
-const { LoremIpsum } = require('lorem-ipsum');
-const { name } = require('faker');
-
-// set up lorem ipsum params
-const lorem = new LoremIpsum({
-  sentencesPerParagraph: {
-    max: 8,
-    min: 1,
-  },
-  wordsPerSentence: {
-    max: 16,
-    min: 4,
-  },
-});
+const { name, lorem } = require('faker');
 
 // ===== HELPER FUNCTIONS =====
 const pad3 = (numString) => {
@@ -38,18 +25,16 @@ const generateReviews = (size) => {
 
     reviewObj.reviewer_name = name.firstName();
     reviewObj.dp = randomNumber(1, 30).toString();
-    reviewObj.body = lorem.generateParagraphs(1);
+    reviewObj.body = lorem.paragraph(1);
     reviewObj.date = randomDate(new Date(2014, 0, 1), new Date());
     if (hasResponse()) {
-      reviewObj.respond = lorem.generateParagraphs(1);
+      reviewObj.respond = lorem.paragraph(1);
     }
 
     reviews.push(reviewObj);
   }
-  return reviews.sort((a, b) => (a.date > b.date));
+  return reviews.sort((a, b) => (a.date < b.date));
 };
-
-// Math.floor(Math.random() * (max - min + 1) + min)
 
 // ====== ENTRY CREATION FUNCTION =====
 const seedEntry = (seed) => {

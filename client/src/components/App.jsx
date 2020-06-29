@@ -1,46 +1,40 @@
 import React from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
+import { Route, Switch } from 'react-router-dom';
 
-import Overview from './Overview.jsx'
-import ReviewsSummary from './ReviewsSummary.jsx'
-import PreviewRating from './PreviewRating.jsx'
-
-const Wrapper = styled.div`
-  font-family: sans-serif
-  display: flex;
-`
+import Reviews from './Reviews.jsx'
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
 
-    this.state = {
-      reviews: [],
-      overview: {}}
+  constructor(props) {
+    super(props);
   }
 
   componentDidMount() {
-    axios.get(`/api/${this.props.listing}`) 
-    .then((results) => {
-      const {reviews, ...rest} = results.data;
-      this.setState({
-        reviews: reviews,
-        overview: rest});
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    axios.get(`/api/reviews/${this.props.listing}`)
+      .then(({data}) => {
+        this.setState({data});
+      })
+      .catch((err) => {
+        throw new Error(`cannot retrieve: ${err}`);
+      });
   }
 
   render() {
-    return (
-      <Wrapper>
-        <Overview overview={this.state.overview} />
-        <PreviewRating overview={this.state.overview} />
-        <ReviewsSummary reviews={this.state.reviews.slice(0,6)} />
-      </Wrapper>
-    )
+    if(this.state){
+      return(
+        <Switch>
+          <Route path='/reviews'>
+            <Reviews modalOpen data={this.state.data}/>
+          </Route>
+
+          <Route path='/'>
+            <Reviews data={this.state.data}/>
+          </Route>
+        </Switch>
+      )
+    }
+    return(<div>Error 404</div>)
   }
 }
 

@@ -1,24 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ReviewsSummary component should render 1`] = `
-.c1 {
-  margin: 25px 50px 25px 50px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .c3 {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
 }
 
 .c4 {
@@ -31,9 +29,14 @@ exports[`ReviewsSummary component should render 1`] = `
   color: #B3B3B3;
 }
 
+.c1 {
+  margin: 50px 15px 25px 50px;
+}
+
 .c0 {
   display: grid;
   grid-template-columns: repeat(2,auto);
+  margin: 0 auto;
 }
 
 <div
@@ -53,7 +56,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Clifton
+          <b>
+            Clifton
+          </b>
           <br />
           <span
             className="c5"
@@ -62,12 +67,14 @@ exports[`ReviewsSummary component should render 1`] = `
           </span>
         </div>
       </div>
-      Cillum magna cupidatat id veniam eiusmod et fugiat duis labore ipsum adipisicing cillum. Commodo consectetur et amet ipsum et anim aute commodo. Quis aliquip nisi ad ex. Tempor eli
+      Cillum magna cupidatat id veniam eiusmod et fugiat duis labore ipsum adipisicing cillum. Commodo consectetur et amet ipsum et anim aute commodo. Quis aliquip nisi ad ex. Tempor eli...     
       <a
         href="#"
         onClick={[Function]}
       >
-        ...Read More
+        <b>
+          read more
+        </b>
       </a>
     </div>
   </div>
@@ -85,7 +92,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Alvis
+          <b>
+            Alvis
+          </b>
           <br />
           <span
             className="c5"
@@ -94,12 +103,14 @@ exports[`ReviewsSummary component should render 1`] = `
           </span>
         </div>
       </div>
-      Tempor do laborum excepteur exercitation ipsum sunt non duis ad culpa minim nisi elit esse laboris. Non in pariatur cupidatat elit. Ullamco ad ut tempor excepteur reprehenderit eni
+      Tempor do laborum excepteur exercitation ipsum sunt non duis ad culpa minim nisi elit esse laboris. Non in pariatur cupidatat elit. Ullamco ad ut tempor excepteur reprehenderit eni...     
       <a
         href="#"
         onClick={[Function]}
       >
-        ...Read More
+        <b>
+          read more
+        </b>
       </a>
     </div>
   </div>
@@ -117,7 +128,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Samir
+          <b>
+            Samir
+          </b>
           <br />
           <span
             className="c5"
@@ -143,7 +156,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Ismael
+          <b>
+            Ismael
+          </b>
           <br />
           <span
             className="c5"
@@ -152,12 +167,14 @@ exports[`ReviewsSummary component should render 1`] = `
           </span>
         </div>
       </div>
-      Est ut anim ipsum enim mollit excepteur sit. Sunt irure esse adipisicing tempor exercitation eu ex dolore sunt do officia pariatur. Dolor enim incididunt aute consectetur nisi ulla
+      Est ut anim ipsum enim mollit excepteur sit. Sunt irure esse adipisicing tempor exercitation eu ex dolore sunt do officia pariatur. Dolor enim incididunt aute consectetur nisi ulla...     
       <a
         href="#"
         onClick={[Function]}
       >
-        ...Read More
+        <b>
+          read more
+        </b>
       </a>
     </div>
   </div>
@@ -175,7 +192,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Kolby
+          <b>
+            Kolby
+          </b>
           <br />
           <span
             className="c5"
@@ -184,12 +203,14 @@ exports[`ReviewsSummary component should render 1`] = `
           </span>
         </div>
       </div>
-      Anim minim qui culpa anim. Esse exercitation sit sint tempor aliqua proident. Ullamco duis tempor cupidatat sunt quis labore mollit tempor. Ea enim aliquip Lorem do aliquip exercit
+      Anim minim qui culpa anim. Esse exercitation sit sint tempor aliqua proident. Ullamco duis tempor cupidatat sunt quis labore mollit tempor. Ea enim aliquip Lorem do aliquip exercit...     
       <a
         href="#"
         onClick={[Function]}
       >
-        ...Read More
+        <b>
+          read more
+        </b>
       </a>
     </div>
   </div>
@@ -207,7 +228,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Avery
+          <b>
+            Avery
+          </b>
           <br />
           <span
             className="c5"
@@ -233,7 +256,9 @@ exports[`ReviewsSummary component should render 1`] = `
         <div
           className="c4"
         >
-          Tremaine
+          <b>
+            Tremaine
+          </b>
           <br />
           <span
             className="c5"
@@ -242,12 +267,14 @@ exports[`ReviewsSummary component should render 1`] = `
           </span>
         </div>
       </div>
-      Consequat adipisicing veniam non laboris nisi laborum aliquip elit. Anim magna ad esse quis consectetur velit irure est irure adipisicing id aliquip commodo. Nostrud consequat labo
+      Consequat adipisicing veniam non laboris nisi laborum aliquip elit. Anim magna ad esse quis consectetur velit irure est irure adipisicing id aliquip commodo. Nostrud consequat labo...     
       <a
         href="#"
         onClick={[Function]}
       >
-        ...Read More
+        <b>
+          read more
+        </b>
       </a>
     </div>
   </div>
