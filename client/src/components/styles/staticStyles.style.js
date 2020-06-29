@@ -58,7 +58,8 @@ const PreviewWrapper = styled.div`
 
 // ReviewEntry
 const EntryWrapper = styled.div`
-  margin: 25px 50px 25px 50px;  
+  margin: 25px 50px 25px 50px;
+  padding-bottom: 30px;  
 `;
 const ShiftedWrapper = styled(EntryWrapper)`
   padding-left: 30px;
