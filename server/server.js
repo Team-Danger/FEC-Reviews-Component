@@ -1,11 +1,13 @@
 const path = require('path');
 const express = require('express');
+
 const app = require('./app');
 require('../database/index.js');
 
 const PORT = process.env.PORT || 3000;
 
 const PUBLIC = path.resolve(__dirname, '..', 'client', 'public');
+
 
 app.use(express.static(PUBLIC));
 

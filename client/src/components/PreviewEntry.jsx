@@ -3,7 +3,7 @@ import moment from 'moment';
 
 // Styling import
 import { TopStyle, AvatarStyle, TopText, Date } from './styles/generalUse.style';
-import { PreviewWrapper } from './styles/staticStyles.style';
+import { PreviewWrapper, ReadMore } from './styles/staticStyles.style';
 
 class PreviewEntry extends React.Component {
   constructor(props) {
@@ -60,7 +60,7 @@ class PreviewEntry extends React.Component {
             </TopText>
           </TopStyle>
           {`${this.state.display}...     `}   
-          <a href='#' onClick={this.handleClick}><b>read more</b></a>
+          <ReadMore><a onClick={this.handleClick}><b><u>read more</u></b></a></ReadMore>
         </PreviewWrapper>
       )
     } else {
