@@ -4,7 +4,7 @@ const express = require('express');
 const app = require('./app');
 require('../database/index.js');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 
 const PUBLIC = path.resolve(__dirname, '..', 'client', 'public');
 
