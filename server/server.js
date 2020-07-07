@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require('express');
+const compress = require('compression');
 
 const app = require('./app');
 require('../database/index.js');
@@ -8,7 +9,7 @@ const PORT = process.env.PORT || 3002;
 
 const PUBLIC = path.resolve(__dirname, '..', 'client', 'public');
 
-
+app.use(compress());
 app.use(express.static(PUBLIC));
 
 app.get('*', (req, res) => {

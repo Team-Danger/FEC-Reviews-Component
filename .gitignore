@@ -1,5 +1,5 @@
-node_modules
 coverage
 bundle.js
 .config.js
 .DS_store
+node_modules
