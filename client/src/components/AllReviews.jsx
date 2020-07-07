@@ -1,6 +1,9 @@
 import React from 'react'
+import loadable from '@loadable/component'
 
-import ReviewEntry from './ReviewEntry.jsx'
+const ReviewEntry = loadable(() => import('./ReviewEntry.jsx'))
+
+// import ReviewEntry from './ReviewEntry.jsx'
 
 import { ReviewListWrapper } from './styles/staticStyles.style'
 

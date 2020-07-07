@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import loadable from '@loadable/component'
 
 import { Wrapper, ModalButton, MainOverviewWrapper, MainOverviewText} from './styles/staticStyles.style';
 import { FaStar } from "react-icons/fa";
 
-import ReviewsSummary from './ReviewsSummary.jsx'
-import PreviewRating from './PreviewRating.jsx'
-import Modal from './Modal.jsx'
+// import ReviewsSummary from './ReviewsSummary.jsx'
+// import PreviewRating from './PreviewRating.jsx'
+// import Modal from './Modal.jsx'
+
+const ReviewsSummary = loadable(() => import('./ReviewsSummary.jsx'));
+const PreviewRating = loadable(() => import('./PreviewRating.jsx'));
+const Modal = loadable(() => import('./Modal.jsx'));
 
 const Reviews = (props) => {
   const { data, modalOpen } = props;

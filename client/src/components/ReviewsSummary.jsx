@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import loadable from '@loadable/component'
 
-import PreviewEntry from './PreviewEntry.jsx'
+// import PreviewEntry from './PreviewEntry.jsx'
+const PreviewEntry = loadable(() => import('./PreviewEntry.jsx'));
 
 const ReviewSummaryStyle = styled.div`
   display: grid;
