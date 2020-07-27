@@ -1,8 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import { Route, Switch } from 'react-router-dom';
+import loadable from '@loadable/component'
 
-import Reviews from './Reviews.jsx'
+const Reviews= loadable(() => import('./Reviews.jsx'))
+// import Reviews from './Reviews.jsx'
 
 class App extends React.Component {
 

@@ -56,6 +56,13 @@ const PreviewWrapper = styled.div`
   margin: 50px 15px 25px 50px; 
 `;
 
+const ReadMore = styled.span`
+&:hover {
+  cursor: pointer;
+  text-shadow: 0.25px 0.25px 0.25px;
+}
+`
+
 // ReviewEntry
 const EntryWrapper = styled.div`
   margin: 25px 50px 25px 50px;
@@ -172,6 +179,7 @@ export {
   RatingGrid,
   RatingPreviewContainer,
   RatingWrapper,
+  ReadMore,
   ReviewListWrapper,
   ReviewsWrapper,
   ShiftedWrapper,

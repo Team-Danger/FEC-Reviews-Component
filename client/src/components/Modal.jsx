@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import loadable from '@loadable/component'
 
 // Styling imports
 import { ModalWrapper, ExitButton, ReviewsWrapper } from './styles/staticStyles.style';
@@ -7,7 +8,8 @@ import { ModalDisplay } from './styles/propStyles.style';
 import { GoX } from 'react-icons/go';
 
 // component imports
-import AllReviews from './AllReviews.jsx';
+const AllReviews = loadable(() => import('./AllReviews.jsx'))
+// import AllReviews from './AllReviews.jsx';
 import { Rating } from './Rating.jsx'
 
 const Modal = (props) => {

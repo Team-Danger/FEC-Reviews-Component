@@ -28,8 +28,9 @@ module.exports = {
       },
     ]
   },
-  mode: 'development',
-  devtool: 'inline-source-map',
+  // mode: 'development',
+  // devtool: 'inline-source-map',
+  mode: 'production',
   resolve: { 
     extensions: ['.jsx', '.js'], 
   }
