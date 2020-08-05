@@ -1,5 +1,5 @@
 # HomeAway
-**HomeAway** is an open source web application vacation home reservation application.
+**HomeAway** is an open source vacation home reservation application.
 > **This repository** is responsible for the reviews service that displays customer reviews on a particular listing and any replies made to those reviews by the host posting said listing
 
 ## Technologies
