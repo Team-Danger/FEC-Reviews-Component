@@ -1,5 +1,5 @@
-# Latitude
-**Latitude** is an open source web application vacation home reservation application.
+# HomeAway
+**HomeAway** is an open source web application vacation home reservation application.
 > **This particular service** is the reviews service that displays customer reviews on a particular listing through review previews and a modal
 
 ## Technologies
