@@ -1,6 +1,6 @@
 # HomeAway
 **HomeAway** is an open source web application vacation home reservation application.
-> **This particular service** is the reviews service that displays customer reviews on a particular listing through review previews and a modal
+> **This repository** is responsible for the reviews service that displays customer reviews on a particular listing and any replies made to those reviews by the host posting said listing
 
 ## Technologies
 > This service is created with :
@@ -17,10 +17,10 @@
 > A version of this service is available on [DockerHub](https://hub.docker.com/r/jzhengcode/fec-reviews-component_web), which can be used for easier **deployment** if needed
 
 - To **Install Required Dependencies** :
-```npm install```
+  ```npm install```
 
 - To **seed sample data** onto the database :
-```npm run seedDB```
+  ```npm run seedDB```
 
 - To configure AWS S3
   - Create a .config.js file in the root directory
@@ -32,10 +32,10 @@
     module.exports.keyId = keyId;
     module.exports.accessKey = accessKey;
 - To compile the client bundle using **Webpack** :
-```npm run watch```
+  ```npm run watch```
 
 - To start the server using **Nodemon** (default port is 3002):
-```npm run server```
+  ```npm run server```
 
 ## Related Projects
 - [Reservation Service](https://github.com/Team-Danger/Reservation-Component) by Will Park
